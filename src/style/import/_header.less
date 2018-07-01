@@ -1,0 +1,239 @@
+//------HEADER
+.header {
+	color: @colorLight;
+	background: linear-gradient(rgba(0, 0, 0, 0.51) 100%, rgba(0, 0, 0, 0.51) 100%), url("../img/bg_home.png") 50% no-repeat;
+	background-size: cover;
+	background-attachment: fixed !important;
+	position: relative;
+	min-height: 100vh;
+	height: 100%;
+	@media only screen and (max-width: @md) {
+		background-size: auto;
+	}
+	&_menu {
+		background-color: rgba(69, 70, 71, .85);
+	}
+	&_wrap {
+		padding-top: 15rem;
+		padding-bottom: 15rem;
+	}
+	&_footer {
+		background-color: @colorMain;
+		color: @colorLightDark;
+		font-size: 6rem;
+		padding-bottom: 3rem;
+	}
+	&_nav {
+		font-family: @fontRoboto;
+		font-size: 2.4rem;
+		color: @colorLight !important;
+		padding-left: 7%;
+		padding-right: 7%;
+		&:hover,
+		&:active {
+			color: @colorMain !important;
+		}
+		ul {
+			color: @linkColor;
+		}
+		@media only screen and (max-width: 1120px) {
+			padding-left: 2%;
+			padding-right: 2%;
+		}
+		@media only screen and (max-width: @lg) {
+			ul {
+				display: none;
+			}
+			:nth-child(2) {
+				margin-left: auto;
+			}
+		}
+		@media only screen and (max-width: @md) {
+			:nth-child(2) {
+				margin-right: auto;
+				margin-left: 0;
+			}
+		}
+		@media only screen and (max-width: @xs) {
+			img {
+				width: 90%;
+				//display: block;
+				//margin: 0 auto;
+			}
+		}
+	}
+	&_item {
+		margin-left: 3rem;
+		margin-right: 3rem;
+		@media only screen and (max-width: @lg) {
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+	}
+	&_btn {
+		background-color: @colorMain;
+		font-family: @fontCuprum;
+		font-weight: 700;
+		font-stretch: condensed;
+		font-size: 3rem;
+		padding: 2rem 6.5rem;
+		@media only screen and (max-width: @xs) {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+		&__main {
+			border-radius: 10px;
+			padding: 1.5rem 4rem;
+		}
+		&__dark {
+			background-color: @colorDark;
+			color: @colorLight;
+			border-radius: 10px;
+			padding: 1.5rem 4rem;
+		}
+	}
+	&_form {
+		background-color: rgba(0, 0, 0, .95);
+		border-radius: 10px;
+		font-size: 3rem;
+		height: 61rem;
+		width: 45rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		button {
+			color: @colorLight;
+		}
+		input {
+			margin-bottom: 3rem;
+			font-size: 2.4rem;
+			height: 6rem;
+			width: 38rem;
+			border-radius: 1rem;
+		}
+	}
+}
+.colored {
+	color: @colorMain;
+}
+.form_size {
+	font-size: 4rem;
+}
+.container-fluid {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+	//&_bottom {
+	//	position: absolute;
+	//	bottom: -.2rem;
+	//	width: 100%;
+    //
+	//	background-size: 100% 100%;
+	//	height: 42%;
+	//	@media only screen and (max-width: 144rem) {
+	//		height: 30%;
+	//	}
+	//	@media only screen and (max-width: @lg) {
+	//		height: 25%;
+	//	}
+	//	@media only screen and (max-width: @md) {
+	//		height: 20%;
+	//	}
+	//	@media only screen and (max-width: @sm) {
+	//		height: 0;
+	//	}
+	//}
+
+//.menu_nav {
+//	.flex_c_row;
+//	@media only screen and (max-width: @lg) {
+//		position: fixed;
+//		width: 100%;
+//		height: 100%;
+//		z-index: 999;
+//		top: 0;
+//		right: 0;
+//		transition: all .5s;
+//		transform: translateX(100%);
+//		&.active {
+//			transform: translateX(0);
+//		}
+//	}
+//}
+//.overlay {
+//    height: 100%;
+//    .flex_c_row;
+//    @media only screen and (max-width: @lg) {
+//        background: rgba(0, 0, 0, .7);
+//        width: 36rem;
+//        height: 100%;
+//		position: absolute;
+//		.flex_c_col;
+//		right: 0;
+//		top: 0;
+//    }
+//    @media only screen and (max-width: @xs) {
+//    	 width: 100%;
+//    }
+//}
+//.nav-link {
+//	color: @linkColor;
+//	display: inline-block;
+//	font-size: 1.4rem;
+//	background-color: transparent;
+//	text-transform: uppercase;
+//	position: relative;
+//	padding-bottom: .4rem;
+//	font-size: 1.2rem;
+//	text-shadow: .6rem .4rem .4rem rgba(0, 0, 0, .18);
+//	&:after {
+//		position: absolute;
+//		content: '';
+//		width: 100%;
+//		height: .4rem;
+//		border-radius: .4rem;
+//		background-color: @linkColor;
+//		opacity: 0;
+//		bottom: 0;
+//		left: 0;
+//	}
+//	&:hover,
+//	&:active {
+//		color: @linkColor;
+//		text-decoration: none;
+//	}
+//	&:hover:after {
+//		opacity: 1;
+//	}
+//	@media only screen and (max-width: @lg) {
+//		display: inline-block;
+//		text-align: center;
+//		font-size: 1.8rem;
+//		margin: .3rem 0;
+//		z-index: 999;
+//	}
+//	@media only screen and (max-width: @xs) {
+//		text-align: center;
+//	}
+//}
+//.buttonmobile {
+//	position: absolute;
+//	top: 26px;
+//	right: 20px;
+//	transition: .35s ease-out;
+//	cursor: pointer;
+//	@media only screen and (min-width: @lg) {
+//		display: none;
+//	}
+//	&__line {
+//		height: 2px;
+//		width: 30px;
+//		background: @colorDark;
+//		margin-bottom: 7px;
+//		opacity: 1;
+//		transition: .35s ease-out;
+//		&:last-child {
+//			margin-bottom: 0;
+//		}
+//	}
+//}

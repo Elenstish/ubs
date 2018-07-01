@@ -1,0 +1,32 @@
+//------WHY_US
+.wrap_why_us {
+	background: url("../img/bg_why_us.png") no-repeat;
+	background-size: contain;
+	background-position: 100% 90%;
+	min-height: 50rem;
+	@media only screen and (max-width: @md) {
+		background-position: 100% 100%;
+	} 
+	@media only screen and (max-width: @sm) {
+		min-height: 60rem;
+	} 
+	@media only screen and (max-width: @xs) {
+		min-height: 65rem;
+	} 
+}
+.why_us {
+	color: @colorDark;
+	background: @colorLight;	
+	&_title {
+		margin-bottom: 1.6rem;
+		display: inline-block;		
+		padding: 0 4.5rem 1rem 4.5rem;
+		border-bottom: .4rem solid @colorDark;
+		@media only screen and (max-width: @lg) {
+			margin-top: 6rem;
+		}
+	}
+	&_subtitle {
+		text-indent: 3.5rem;
+	}
+}

@@ -1,0 +1,59 @@
+// @import "import/_animation";
+@import "import/_variables";
+
+//----MAIN
+
+*, :after, :before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%; //10px
+	color: @colorLight;
+	@media (max-width: @sm) {
+		font-size: 52%;
+	}
+	@media (max-width: @md) {
+		font-size: 55.55%;
+	}
+	@media (max-width: @lg) {
+		font-size: 59%; 
+	}
+}
+
+body {
+	font-size: 2.4rem;
+	font-family: @fontRoboto;
+}
+
+h1 {
+	font-size: 15rem;
+	font-weight: 700;
+	font-stretch: condensed;
+	font-family: @fontRoboto;
+}
+
+ul {
+	list-style: none;
+	font-size: 3rem;
+}
+
+.header,
+.main,
+.footer {
+	width: 100vw;
+	max-width: 100%;
+}
+//.container {
+//	max-width: 117rem;
+//	width: 100%;
+//	margin-left: auto;
+//	margin-right: auto;
+//}
+//.wrap {
+//	width: 100%;
+//}
+
+@import "./import/_header";
