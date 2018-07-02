@@ -10,16 +10,16 @@
 }
 
 html {
-	font-size: 62.5%; //10px
+	font-size: 10px;
 	color: @colorLight;
 	@media (max-width: @sm) {
-		font-size: 52%;
+		font-size: 7px;
 	}
 	@media (max-width: @md) {
-		font-size: 55.55%;
+		font-size: 8px;
 	}
 	@media (max-width: @lg) {
-		font-size: 59%; 
+		font-size: 9px;
 	}
 }
 
@@ -32,7 +32,24 @@ h1 {
 	font-size: 15rem;
 	font-weight: 700;
 	font-stretch: condensed;
-	font-family: @fontRoboto;
+	text-transform: uppercase
+}
+
+h2 {
+    font-size: 5.4rem;
+    font-weight: 700;
+    font-family: @fontPTSans;
+    text-transform: uppercase
+}
+
+h3 {
+    font-size: 2.7rem;
+    font-weight: 400;
+    font-family: @fontCuprum;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase
+
 }
 
 ul {
@@ -57,3 +74,4 @@ ul {
 //}
 
 @import "./import/_header";
+@import "./import/_profile";

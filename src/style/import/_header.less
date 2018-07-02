@@ -1,38 +1,37 @@
 //------HEADER
 .header {
 	color: @colorLight;
-	background: linear-gradient(rgba(0, 0, 0, 0.51) 100%, rgba(0, 0, 0, 0.51) 100%), url("../img/bg_home.png") 50% no-repeat;
-	background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.51) 100%, rgba(0, 0, 0, 0.51) 100%), url("../img/bg_home.png") 50% 0 no-repeat;
+	background-size: auto;
 	background-attachment: fixed !important;
-	position: relative;
-	min-height: 100vh;
-	height: 100%;
-	@media only screen and (max-width: @md) {
-		background-size: auto;
-	}
+	//min-height: 100vh;
+	//height: 100%;
+    position: relative;
 	&_menu {
 		background-color: rgba(69, 70, 71, .85);
 	}
 	&_wrap {
-		padding-top: 15rem;
-		padding-bottom: 15rem;
+        //position: absolute;
+        //top: 50%;
+        //transform: translateY(-50%);
+      padding-top: 9rem;
+      padding-bottom: 9rem;
 	}
 	&_footer {
+        width: 100%;
 		background-color: @colorMain;
 		color: @colorLightDark;
 		font-size: 6rem;
 		padding-bottom: 3rem;
-	}
+        //position: absolute;
+        //bottom: 0;
+      }
 	&_nav {
 		font-family: @fontRoboto;
 		font-size: 2.4rem;
 		color: @colorLight !important;
 		padding-left: 7%;
 		padding-right: 7%;
-		&:hover,
-		&:active {
-			color: @colorMain !important;
-		}
 		ul {
 			color: @linkColor;
 		}
@@ -63,13 +62,26 @@
 		}
 	}
 	&_item {
-		margin-left: 3rem;
-		margin-right: 3rem;
-		@media only screen and (max-width: @lg) {
-			margin-left: 1rem;
-			margin-right: 1rem;
-		}
+		margin-left: 7rem;
+		margin-right: 7rem;
+        font-size: 2.4rem;
+        a {
+          color: @colorLight !important;
+          &:hover,
+          &:active {
+            color: @colorMain !important;
+          }
+        }
+		//@media only screen and (max-width: @lg) {
+		//	margin-left: 2.5rem;
+		//	margin-right: 2.5rem;
+		//}
 	}
+  &_text {
+    line-height: 4.8rem;
+    padding-right: 20rem;
+    margin-bottom: 3.5rem;
+  }
 	&_btn {
 		background-color: @colorMain;
 		font-family: @fontCuprum;
@@ -78,8 +90,8 @@
 		font-size: 3rem;
 		padding: 2rem 6.5rem;
 		@media only screen and (max-width: @xs) {
-			padding-left: 3rem;
-			padding-right: 3rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
 		}
 		&__main {
 			border-radius: 10px;
@@ -123,117 +135,3 @@
 	padding-left: 10%;
 	padding-right: 10%;
 }
-	//&_bottom {
-	//	position: absolute;
-	//	bottom: -.2rem;
-	//	width: 100%;
-    //
-	//	background-size: 100% 100%;
-	//	height: 42%;
-	//	@media only screen and (max-width: 144rem) {
-	//		height: 30%;
-	//	}
-	//	@media only screen and (max-width: @lg) {
-	//		height: 25%;
-	//	}
-	//	@media only screen and (max-width: @md) {
-	//		height: 20%;
-	//	}
-	//	@media only screen and (max-width: @sm) {
-	//		height: 0;
-	//	}
-	//}
-
-//.menu_nav {
-//	.flex_c_row;
-//	@media only screen and (max-width: @lg) {
-//		position: fixed;
-//		width: 100%;
-//		height: 100%;
-//		z-index: 999;
-//		top: 0;
-//		right: 0;
-//		transition: all .5s;
-//		transform: translateX(100%);
-//		&.active {
-//			transform: translateX(0);
-//		}
-//	}
-//}
-//.overlay {
-//    height: 100%;
-//    .flex_c_row;
-//    @media only screen and (max-width: @lg) {
-//        background: rgba(0, 0, 0, .7);
-//        width: 36rem;
-//        height: 100%;
-//		position: absolute;
-//		.flex_c_col;
-//		right: 0;
-//		top: 0;
-//    }
-//    @media only screen and (max-width: @xs) {
-//    	 width: 100%;
-//    }
-//}
-//.nav-link {
-//	color: @linkColor;
-//	display: inline-block;
-//	font-size: 1.4rem;
-//	background-color: transparent;
-//	text-transform: uppercase;
-//	position: relative;
-//	padding-bottom: .4rem;
-//	font-size: 1.2rem;
-//	text-shadow: .6rem .4rem .4rem rgba(0, 0, 0, .18);
-//	&:after {
-//		position: absolute;
-//		content: '';
-//		width: 100%;
-//		height: .4rem;
-//		border-radius: .4rem;
-//		background-color: @linkColor;
-//		opacity: 0;
-//		bottom: 0;
-//		left: 0;
-//	}
-//	&:hover,
-//	&:active {
-//		color: @linkColor;
-//		text-decoration: none;
-//	}
-//	&:hover:after {
-//		opacity: 1;
-//	}
-//	@media only screen and (max-width: @lg) {
-//		display: inline-block;
-//		text-align: center;
-//		font-size: 1.8rem;
-//		margin: .3rem 0;
-//		z-index: 999;
-//	}
-//	@media only screen and (max-width: @xs) {
-//		text-align: center;
-//	}
-//}
-//.buttonmobile {
-//	position: absolute;
-//	top: 26px;
-//	right: 20px;
-//	transition: .35s ease-out;
-//	cursor: pointer;
-//	@media only screen and (min-width: @lg) {
-//		display: none;
-//	}
-//	&__line {
-//		height: 2px;
-//		width: 30px;
-//		background: @colorDark;
-//		margin-bottom: 7px;
-//		opacity: 1;
-//		transition: .35s ease-out;
-//		&:last-child {
-//			margin-bottom: 0;
-//		}
-//	}
-//}
