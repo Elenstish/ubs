@@ -1,0 +1,53 @@
+//------WORKS
+.works {
+    &_items {
+        margin-top: 8rem;
+        margin-bottom: 10rem;
+    }
+    &_services li {
+        display: inline;
+    }
+    &_text{
+        text-align: left;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    &_colored {
+        color: @colorBlue;
+    }
+    &_btn {
+        background-color: @colorDark;
+        color: @colorLight;
+        font-size: 2.8rem;
+        font-family: @fontCuprum;
+        font-weight: 700;
+        height: 6rem;
+        line-height: 5.7rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        &__grey {
+            background-color: @colorLightDark;
+            margin-left: 6rem;
+        }
+    }
+    &_card {
+        height: 76.8rem !important;
+        position: relative;
+        &:hover,
+        &:active {
+        }
+    }
+    &_footer{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        text-transform: uppercase;
+        font-size: 4rem;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.card_btn{
+    position: absolute;
+    bottom: 0;
+}

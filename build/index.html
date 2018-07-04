@@ -36,11 +36,11 @@
 				</button>
 				<div class="collapse navbar-collapse justify-content-md-center" id="navbar">
 					<ul class="navbar-nav text-uppercase">
-						<li class="nav-item active header_item">
-							<a class="nav-link header_link" href="#profile">Профиль</a>
-						</li>
 						<li class="nav-item header_item">
 							<a class="nav-link header_link" href="#work">Работы</a>
+						</li>
+						<li class="nav-item active header_item">
+							<a class="nav-link header_link" href="#profile">Профиль</a>
 						</li>
 						<li class="nav-item header_item">
 							<a class="nav-link header_link" href="#advantage">Преимущества</a>
@@ -59,7 +59,11 @@
 			<div class="row d-flex">
 				<div class="col-8 pl-3 pr-3">
 					<h1>окна<br><span class="colored">балконы</span></h1>
-					<div class="header_text">JKdjfkjjfaff szkjflkajeflajf lasejflawjflawkjf ljfalskfjewalfj aefjaewlfej alfjlawkjfaw jawljfoiawjfoiaj aljfaewlejf  efawieopjfoiwaijefiojf fajefoiawjf oaiejfaowifjao oajwefoiawjef aefjaoe</div>
+					<div class="header_text">
+						Энергоэффективность -
+						<br>Металлопластиковые окна, Балконы.
+						<br>Лоджии под ключ -  качественно!!!!
+					</div>
 					<button class="btn header_btn header_btn__main text-uppercase">Связаться с нами</button>
 				</div>
 				<div class="col-4">
@@ -87,31 +91,35 @@
 		</div>
 	</header>
 	<main class="main">
-		<!--SECTION PROFILE-->
-		<div class="container-fluid text-center profile" id="profile">
-			<h2><span class="colored">Наш</span> профиль</h2>
+		<!--SECTION WORKS-->
+		<div class="container-fluid text-center works" id="works">
+			<h2><span class="colored">Наши</span> услуги</h2>
 			<div class="line ml-auto mr-auto"></div>
-			<div class="row profile_items">
-				<div class="profile_item js-filter">
-					<h3>Эконом</h3>
-				</div>
-				<div class="profile_item">
-					<h3>Стандарт</h3>
-				</div>
-				<div class="profile_item">
-					<h3>Элит</h3>
-				</div>
+			<div class="works_items">
+				<ul class="works_services">
+					<li class="">&#8226; роллеты&nbsp;&nbsp;</li>
+					<li class="">&#8226;окна&nbsp;&nbsp;</li>
+					<li class="">&#8226;балконы&nbsp;&nbsp;</li>
+					<li class="">&#8226;жалюзы&nbsp;&nbsp;</li>
+					<li class="">&#8226;мафы&nbsp;&nbsp;</li>
+				</ul>
+				<ul class="works_services">
+					<li>&#8226;кровля&nbsp;&nbsp;&nbsp;</li>
+					<li>&#8226;двери&nbsp;&nbsp;&nbsp;</li>
+					<li>&#8226;модульные дома&nbsp;&nbsp;</li>
+					<li>&#8226;лоджии&nbsp;&nbsp;</li>
+				</ul>
 			</div>
 		<!--Slider-->
-			<div class="profile_slider responsive">
-				<div class="profile_card">
+			<div class="works_slider responsive">
+				<div class="works_card">
 					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid profile_img" src="img/wds_classic.jpg" alt="WDS Classic">
+						<img class="img-fluid works_img" src="img/img_1.jpg" alt="жалюзи">
 					</div>
 					<div class="card-body pt-2">
-						<h4><span class="profile_colored">WDS</span> Classic</h4>
+						<h4><span class="colored">Жалюзи</span></h4>
 						<h5>Характеристики</h5>
-						<p class="profile_text">Монтажная ширина рамы — 60 мм
+						<p class="works_text">Монтажная ширина рамы — 60 мм
 							<br>U профильной системы (с армированием, если используется) — 1.65 Вт/Км²
 							<br>Толщина наружной стенки — 2.6 мм
 							<br>Количество камер в раме — 3
@@ -123,17 +131,17 @@
 						</p>
 					</div>
 					<div class="card_btn">
-						<button class="btn profile_btn text-uppercase">Заказать</button>
+						<button class="btn works_btn text-uppercase">Заказать</button>
 					</div>
 				</div>
-				<div class="profile_card">
+				<div class="works_card">
 					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid profile_img" src="img/wds_500.jpg" alt="WDS 500">
+						<img class="img-fluid works_img" src="img/img_2.jpg" alt="заборы">
 					</div>
 					<div class="card-body pt-2">
-						<h4><span class="profile_colored">WDS</span> 500</h4>
+						<h4><span class="colored">заборы</span></h4>
 						<h5>Характеристики</h5>
-						<p class="profile_text">монтажная глубина 70 мм
+						<p class="works_text">монтажная глубина 70 мм
 							<br>толщина внешней стенки 2,7 мм
 							<br>наклон дренажа 2°
 							<br>фурнитурная система 12/20-13
@@ -143,98 +151,119 @@
 						</p>
 					</div>
 					<div class="card_btn">
-						<button class="btn profile_btn text-uppercase">Заказать</button>
+						<button class="btn works_btn text-uppercase">Заказать</button>
 					</div>
 				</div>
-				<div class="profile_card">
+				<div class="works_card">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid works_img" src="img/img_3.jpg" alt="балконы">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="colored">Балконы</span></h4>
+						<h5>Характеристики</h5>
+						<p class="works_text">Монтажная ширина рамы —    60 мм
+							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
+							<br>Толщина наружной стенки — 2.7 мм
+							<br>Количество камер в раме — 4
+							<br>Количество камер в створке — 4
+							<br>Максимальная толщина стеклопакета — 32 мм
+							<br>Контуры уплотнителя — 2
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn works_btn text-uppercase">Заказать</button>
+					</div>
+				</div>
+				<div class="works_card">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid works_img" src="img/wds_8series.jpg" alt="WDS 8 Series">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="works_colored">WDS</span> 8 Series</h4>
+						<h5>Характеристики</h5>
+						<p class="works_text">Монтажная ширина рамы —    60 мм
+							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
+							<br>Толщина наружной стенки — 2.7 мм
+							<br>Количество камер в раме — 4
+							<br>Количество камер в створке — 4
+							<br>Максимальная толщина стеклопакета — 32 мм
+							<br>Контуры уплотнителя — 2
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn works_btn text-uppercase">Заказать</button>
+					</div>
+				</div>
+				<div class="works_card">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid works_img" src="img/wds_7series.jpg" alt="WDS 7 Series">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="works_colored">WDS</span> 7 Series</h4>
+						<h5>Характеристики</h5>
+						<p class="works_text">Монтажная ширина рамы —    60 мм
+							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
+							<br>Толщина наружной стенки — 2.7 мм
+							<br>Количество камер в раме — 4
+							<br>Количество камер в створке — 4
+							<br>Максимальная толщина стеклопакета — 32 мм
+							<br>Контуры уплотнителя — 2
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn works_btn text-uppercase">Заказать</button>
+					</div>
+				</div>
+			</div>
+		<!--END Slider-->
+			<div class="row works_footer">
+				<div>Вызов замерщика <span class="colored"><b>бесплатно</b></span></div>
+				<button class="btn works_btn works_btn__grey text-uppercase">Позвонить</button>
+			</div>
+		</div>
+		<!--END SECTION WORK-->
+		<!--SECTION PROFILE-->
+		<div class="text-center profile" id="profile">
+			<h2>Наш <span class="colored">профиль</span></h2>
+			<div class="line ml-auto mr-auto"></div>
+			<div class="profile_wrap">
+				<div class="profile_item">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid profile_img" src="img/wds_classic.jpg" alt="WDS Classic">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="profile_colored">WDS</span> Classic</h4>
+					</div>
+				</div>
+				<div class="profile_item">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid profile_img" src="img/wds_500.jpg" alt="WDS 500">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="profile_colored">WDS</span> 500</h4>
+					</div>
+				</div>
+				<div class="profile_item">
 					<div class="card-img-top card-img-top-250">
 						<img class="img-fluid profile_img" src="img/wds_400.jpg" alt="WDS 400">
 					</div>
 					<div class="card-body pt-2">
 						<h4><span class="profile_colored">WDS</span> 400</h4>
-						<h5>Характеристики</h5>
-						<p class="profile_text">Монтажная ширина рамы —    60 мм
-							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
-							<br>Толщина наружной стенки — 2.7 мм
-							<br>Количество камер в раме — 4
-							<br>Количество камер в створке — 4
-							<br>Максимальная толщина стеклопакета — 32 мм
-							<br>Контуры уплотнителя — 2
-						</p>
-					</div>
-					<div class="card_btn">
-						<button class="btn profile_btn text-uppercase">Заказать</button>
 					</div>
 				</div>
-				<div class="profile_card">
-					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid profile_img" src="img/wds_8series.jpg" alt="WDS 8 Series">
-					</div>
-					<div class="card-body pt-2">
-						<h4><span class="profile_colored">WDS</span> 8 Series</h4>
-						<h5>Характеристики</h5>
-						<p class="profile_text">Монтажная ширина рамы —    60 мм
-							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
-							<br>Толщина наружной стенки — 2.7 мм
-							<br>Количество камер в раме — 4
-							<br>Количество камер в створке — 4
-							<br>Максимальная толщина стеклопакета — 32 мм
-							<br>Контуры уплотнителя — 2
-						</p>
-					</div>
-					<div class="card_btn">
-						<button class="btn profile_btn text-uppercase">Заказать</button>
-					</div>
-				</div>
-				<div class="profile_card">
-					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid profile_img" src="img/wds_7series.jpg" alt="WDS 7 Series">
-					</div>
-					<div class="card-body pt-2">
-						<h4><span class="profile_colored">WDS</span> 7 Series</h4>
-						<h5>Характеристики</h5>
-						<p class="profile_text">Монтажная ширина рамы —    60 мм
-							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
-							<br>Толщина наружной стенки — 2.7 мм
-							<br>Количество камер в раме — 4
-							<br>Количество камер в створке — 4
-							<br>Максимальная толщина стеклопакета — 32 мм
-							<br>Контуры уплотнителя — 2
-						</p>
-					</div>
-					<div class="card_btn">
-						<button class="btn profile_btn text-uppercase">Заказать</button>
-					</div>
-				</div>
+				<div class="profile_item"></div>
+				<div class="profile_item"></div>
+				<div class="profile_item"></div>
+				<div class="profile_item"></div>
+				<div class="profile_item"></div>
+				<div class="profile_item"></div>
 			</div>
-		<!--END Slider-->
-			<div class="row profile_footer">
-				<div>Вызов замерщика <span class="colored"><b>бесплатно</b></span></div>
-				<button class="btn profile_btn profile_btn__grey text-uppercase">Позвонить</button>
+			<div class="profile_footer">
+				<div><span class="colored">Более 5.000</span><b> довольных клиентов</b></div>
+				<button class="btn profile_btn text-uppercase">Получить консультацию</button>
 			</div>
 		</div>
 		<!--END SECTION PROFILE-->
-		<!--SECTION WORK-->
-		<div class="text-center work" id="work">
-			<h2>Наши <span class="colored">работы</span></h2>
-			<div class="line ml-auto mr-auto"></div>
-			<div class="work_wrap">
-				<div class="work_item"></div>
-				<div class="work_item"></div>
-				<div class="work_item"></div>
-				<div class="work_item"></div>
-				<div class="work_item"></div>
-				<div class="work_item"></div>
-				<div class="work_item"></div>
-				<div class="work_item"></div>
-				<div class="work_item"></div>
-			</div>
-			<div class="work_footer">
-				<div><span class="colored">Более 5.000</span><b> довольных клиентов</b></div>
-				<button class="btn work_btn text-uppercase">Получить консультацию</button>
-			</div>
-		</div>
-		<!--END SECTION WORK-->
 		<!--SECTION ADVANTAGES-->
 		<div class="text-center advantages" id="advantages">
 			<h2><span class="colored">Преимущества</span> работы с нами</h2>
@@ -243,8 +272,9 @@
 				<div class="advantages_item">
 					<h6>Качество</h6>
 					<p class="advantages_text">
-						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
-						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+						Все используемые изделия и материалы сертифицированы и подтверждаются
+						качественными документами., а персонал представляет собой квалифицированных
+						специалистов.
 					</p>
 					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
 				</div>
@@ -252,39 +282,38 @@
 					<h6>Надежность</h6>
 					<p class="advantages_text">
 						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
-						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+						Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
 					</p>
 					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
 				</div>
 				<div class="advantages_item">
 					<h6>Гарантия</h6>
 					<p class="advantages_text">
-						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
-						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+						Компания предоставляет гарантию на изделия и свои услуги до 10 лет.
 					</p>
 					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
 				</div>
 				<div class="advantages_item">
 					<h6>Опыт</h6>
 					<p class="advantages_text">
-						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
-						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+						Опыт работы с 2007 года, дает нам возможность применять практические навыки в
+						реализации проектов.
 					</p>
 					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
 				</div>
 				<div class="advantages_item">
 					<h6>Долговечность</h6>
 					<p class="advantages_text">
-						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
-						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+						Остановив свой выбор на нашей компании, вы приобретаете
 					</p>
 					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
 				</div>
 				<div class="advantages_item">
-					<h6>Экологичность</h6>
+					<h6>Энергоэффективность</h6>
 					<p class="advantages_text">
-						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
-						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+						Достижение экономически оправданной эффективности использования ТЭР при
+						существующем уровне развития техники и технологии и соблюдении требований к
+						охране окружающей среды.
 					</p>
 					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
 				</div>
@@ -296,8 +325,12 @@
 			<h2>Завод <span class="colored">изготовитель</span></h2>
 			<div class="line ml-auto mr-auto"></div>
 			<div class="plant_wrap ml-auto mr-auto">
-				<div class="embed-responsive embed-responsive-16by9">
+				<div class="embed-responsive embed-responsive-16by9 plant_item">
 					<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/yi05uS374NY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="m-5"></div><div class="m-5"></div>
+				<div class="embed-responsive embed-responsive-16by9 plant_item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Tiu50lGS1Bs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>

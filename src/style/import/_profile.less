@@ -1,61 +1,46 @@
 //------PROFILE
 .profile {
-	&_items {
+	width: 100%;
+	background-color: @colorDark;
+	color: @colorLight;
+	padding-top: 10rem;
+	&_wrap {
+		width: inherit;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		margin-top: 8rem;
 		margin-bottom: 10rem;
-		display: flex;
-		justify-content: center;
-    }
+	}
 	&_item {
-		height: 7rem;
-		width: 23.8rem;
-		border: 1px solid @colorDark;
-    }
-    &_text{
-        text-align: left;
-        font-size: 1.8rem;
-        line-height: 2.4rem;
-    }
-    &_colored {
-      color: @colorBlue;
-    }
-    &_btn {
-        background-color: @colorDark;
-        color: @colorLight;
-        font-size: 2.8rem;
-        font-family: @fontCuprum;
-        font-weight: 700;
-        height: 6rem;
-        line-height: 5.7rem;
-        padding-left: 7rem;
-        padding-right: 7rem;
-        &__grey {
-            background-color: @colorLightDark;
-            margin-left: 6rem;
-        }
-    }
-    &_card {
-        height: 76.8rem !important;
-        position: relative;
-        transform: translateZ(0);
-        transition: all 1s ease-out 0s;
-        &:hover,
-        &:active {
-            //height: 82rem !important;;
-            transform: scale(1.1);
-        }
-    }
-    &_footer{
-        margin-top: 10rem;
-        margin-bottom: 10rem;
-        text-transform: uppercase;
-        font-size: 4rem;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-    }
+		width: 41.7rem;
+		height: 41.7rem;
+		background-color: @colorLight;
+		margin: 1rem;
+		color: @colorDark;
+	}
+	&_footer{
+		margin-top: 10rem;
+		margin-bottom: 7rem;
+		text-transform: uppercase;
+		font-size: 4.8rem;
+		width: 90%;
+	}
+	&_btn {
+		border: 1px solid @colorMain;
+		border-radius: 1rem;
+		background-color: @colorDark;
+		color: @colorLight;
+		font-size: 3rem;
+		font-family: @fontCuprum;
+		font-weight: 700;
+		height: 7.5rem;
+		line-height: 7.2rem;
+		padding-left: 2.4rem;
+		padding-right: 2.4rem;
+		margin-top: 6rem;
+		margin-bottom: 9rem;
+	}
 }
-.card_btn{
-    position: absolute;
-    bottom: 0;
-}
+
+
