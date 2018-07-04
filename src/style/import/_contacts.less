@@ -1,0 +1,29 @@
+//------CONTACTS
+.contacts {
+	width: 100%;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	&_wrap {
+		width: 100%;
+		margin-top: 8rem;
+		background-color: @colorLightDark;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: stretch;
+		align-items: flex-start;
+		@media only screen and (max-width: @md) {
+			flex-direction: column;
+		}
+	}
+	&_item {
+		order: 0;
+		flex: 1 1 50%;
+		align-self: stretch;
+	}
+}
+
+#map {
+	height: 97rem;
+}

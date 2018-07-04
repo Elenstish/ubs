@@ -27,8 +27,6 @@
         //bottom: 0;
       }
 	&_nav {
-		font-family: @fontRoboto;
-		font-size: 2.4rem;
 		color: @colorLight !important;
 		padding-left: 7%;
 		padding-right: 7%;
@@ -65,69 +63,67 @@
 		margin-left: 7rem;
 		margin-right: 7rem;
         font-size: 2.4rem;
-        a {
-          color: @colorLight !important;
-          &:hover,
-          &:active {
-            color: @colorMain !important;
-          }
-        }
 		//@media only screen and (max-width: @lg) {
 		//	margin-left: 2.5rem;
 		//	margin-right: 2.5rem;
 		//}
 	}
-  &_text {
-    line-height: 4.8rem;
-    padding-right: 20rem;
-    margin-bottom: 3.5rem;
-  }
-	&_btn {
-		background-color: @colorMain;
-		font-family: @fontCuprum;
-		font-weight: 700;
-		font-stretch: condensed;
-		font-size: 3rem;
-		padding: 2rem 6.5rem;
-		@media only screen and (max-width: @xs) {
-			padding-left: 2rem;
-			padding-right: 2rem;
-		}
-		&__main {
-			border-radius: 10px;
-			padding: 1.5rem 4rem;
-		}
-		&__dark {
-			background-color: @colorDark;
-			color: @colorLight;
-			border-radius: 10px;
-			padding: 1.5rem 4rem;
-		}
-	}
-	&_form {
-		background-color: rgba(0, 0, 0, .95);
-		border-radius: 10px;
-		font-size: 3rem;
-		height: 61rem;
-		width: 45rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		button {
-			color: @colorLight;
-		}
-		input {
-			margin-bottom: 3rem;
-			font-size: 2.4rem;
-			height: 6rem;
-			width: 38rem;
-			border-radius: 1rem;
-		}
-	}
+    &_text {
+        line-height: 4.8rem;
+        padding-right: 20rem;
+        margin-bottom: 3.5rem;
+    }
+    &_btn {
+        background-color: @colorMain;
+        font-family: @fontCuprum;
+        font-weight: 700;
+        font-stretch: condensed;
+        font-size: 3rem;
+        padding: 2rem 6.5rem;
+        @media only screen and (max-width: @xs) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        &__main {
+            border-radius: 10px;
+            padding: 1.5rem 4rem;
+        }
+        &__dark {
+            background-color: @colorDark;
+            color: @colorLight;
+            border-radius: 10px;
+            padding: 1.5rem 4rem;
+        }
+    }
+    &_form {
+        background-color: rgba(0, 0, 0, .95);
+        border-radius: 10px;
+        font-size: 3rem;
+        height: 61rem;
+        width: 45rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        button {
+            color: @colorLight;
+        }
+        input {
+            margin-bottom: 3rem;
+            font-size: 2.4rem;
+            height: 6rem;
+            width: 38rem;
+            border-radius: 1rem;
+        }
+    }
+    &_link {
+        color: @colorLight !important;
+        &:hover,
+        &:active {
+            color: @colorMain !important;
+        }
+    }
 }
-.colored {
-	color: @colorMain;
-}
+
 .form_size {
 	font-size: 4rem;
 }

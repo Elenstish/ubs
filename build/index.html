@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="libs/bootstrap.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:700|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="libs/slick.css"/>
+    <link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 </head>
 <body>
 	<header class="header">
@@ -30,25 +31,25 @@
 				</div>
 			</nav>
 			<nav class="navbar navbar-dark navbar-expand-md">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbars08" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-md-center" id="navbars08">
+				<div class="collapse navbar-collapse justify-content-md-center" id="navbar">
 					<ul class="navbar-nav text-uppercase">
-						<li class="nav-item header_item">
-							<a class="nav-link" href="#profile">Профиль</a>
+						<li class="nav-item active header_item">
+							<a class="nav-link header_link" href="#profile">Профиль</a>
 						</li>
 						<li class="nav-item header_item">
-							<a class="nav-link" href="#">Контакты</a>
+							<a class="nav-link header_link" href="#work">Работы</a>
 						</li>
 						<li class="nav-item header_item">
-							<a class="nav-link" href="#">Услуги</a>
+							<a class="nav-link header_link" href="#advantage">Преимущества</a>
 						</li>
 						<li class="nav-item header_item">
-							<a class="nav-link" href="#">Преимущества</a>
+							<a class="nav-link header_link" href="#plant">Завод</a>
 						</li>
 						<li class="nav-item header_item">
-							<a class="nav-link" href="#">Завод</a>
+							<a class="nav-link header_link" href="#contacts">Контакты</a>
 						</li>
 					</ul>
 				</div>
@@ -86,263 +87,258 @@
 		</div>
 	</header>
 	<main class="main">
+		<!--SECTION PROFILE-->
 		<div class="container-fluid text-center profile" id="profile">
-			<h2 class="profile_title"><span class="colored">Наш</span> профиль</h2>
+			<h2><span class="colored">Наш</span> профиль</h2>
 			<div class="line ml-auto mr-auto"></div>
-			<div class="row profile_item">
-				<div class="col-sm item d-flex align-items-center col-4">
-					<h3><a href="#econom">Эконом</a></h3>
+			<div class="row profile_items">
+				<div class="profile_item js-filter">
+					<h3>Эконом</h3>
 				</div>
-				<div class="col-sm item d-flex align-items-center col-4">
+				<div class="profile_item">
 					<h3>Стандарт</h3>
 				</div>
-				<div class="col-sm item d-flex align-items-center col-4">
+				<div class="profile_item">
 					<h3>Элит</h3>
 				</div>
 			</div>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="card-deck" id="econom">
-							<div class="card h-100">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2">Econom</h6>
-									<h2>
-										<a href="">Why Stuff Happens Every Year.</a>
-									</h2>
-								</div>
-							</div>
-							<div class="card h-100">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="http://i.imgur.com/Hw7sWGU.png" alt="Carousel 2">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2">Econom Dev</h6>
-									<h2>
-										<a href="">How to Make Every Line Count.</a>
-									</h2>
-								</div>
-							</div>
-							<div class="card h-100">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2">Econom Design</h6>
-									<h2>
-										<a href="">Responsive is Essential.</a>
-									</h2>
-								</div>
-							</div>
-						</div>
+		<!--Slider-->
+			<div class="profile_slider responsive">
+				<div class="profile_card">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid profile_img" src="img/wds_classic.jpg" alt="WDS Classic">
 					</div>
-					<div class="carousel-item">
-						<div class="card-deck">
-							<div class="card h-100">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2">Insight</h6>
-									<h2>
-										<a href="">Why Stuff Happens Every Year.</a>
-									</h2>
-								</div>
-							</div>
-							<div class="card h-100">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="http://i.imgur.com/Hw7sWGU.png" alt="Carousel 2">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2">Development</h6>
-									<h2>
-										<a href="">How to Make Every Line Count.</a>
-									</h2>
-								</div>
-							</div>
-							<div class="card h-100">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2">Design</h6>
-									<h2>
-										<a href="">Responsive is Essential.</a>
-									</h2>
-								</div>
-							</div>
-						</div>
+					<div class="card-body pt-2">
+						<h4><span class="profile_colored">WDS</span> Classic</h4>
+						<h5>Характеристики</h5>
+						<p class="profile_text">Монтажная ширина рамы — 60 мм
+							<br>U профильной системы (с армированием, если используется) — 1.65 Вт/Км²
+							<br>Толщина наружной стенки — 2.6 мм
+							<br>Количество камер в раме — 3
+							<br>Количество камер в створке — 3
+							<br>Максимальная толщина стеклопакета — 32 мм
+							<br>Контуры уплотнителя — 2
+							<br>Материал — металлопластиковые
+							<br>Тип конструкции системы(AD,MD) — AD
+						</p>
 					</div>
-					<div class="carousel-item">
-						<div class="card-deck">
-							<div class="card">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="//visualhunt.com/photos/l/1/office-student-work-study.jpg" alt="Carousel 4">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2">Another</h6>
-									<h2>
-										<a href="">Tagline or Call-to-action.</a>
-									</h2>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="//visualhunt.com/photos/l/1/working-woman-technology-computer.jpg" alt="Carousel 5">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2"><span class="pull-xs-right">12.04</span> Category 1</h6>
-									<h2>
-										<a href="">This is a Blog Title.</a>
-									</h2>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-img-top card-img-top-250">
-									<img class="img-fluid" src="//visualhunt.com/photos/l/1/people-office-team-collaboration.jpg" alt="Carousel 6">
-								</div>
-								<div class="card-body pt-2">
-									<h6 class="small text-wide p-b-2">Category 3</h6>
-									<h2>
-										<a href="">Catchy Title of a Blog Post.</a>
-									</h2>
-								</div>
-							</div>
-						</div>
+					<div class="card_btn">
+						<button class="btn profile_btn text-uppercase">Заказать</button>
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-				<!--<a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#myCarousel"><span aria-hidden="true" class=""></span><span class="sr-only">Previous</span></a>-->
-				<!--<a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#myCarousel"><span aria-hidden="true" class=""></span><span class="sr-only">Next</span></a>-->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
+				<div class="profile_card">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid profile_img" src="img/wds_500.jpg" alt="WDS 500">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="profile_colored">WDS</span> 500</h4>
+						<h5>Характеристики</h5>
+						<p class="profile_text">монтажная глубина 70 мм
+							<br>толщина внешней стенки 2,7 мм
+							<br>наклон дренажа 2°
+							<br>фурнитурная система 12/20-13
+							<br>стеклопакет с размерами 24, 32 и 40 мм
+							<br>ширина наплыва 17 мм
+							<br>сопротивление теплопередачи 0,81 м ?°С/Вт
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn profile_btn text-uppercase">Заказать</button>
+					</div>
+				</div>
+				<div class="profile_card">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid profile_img" src="img/wds_400.jpg" alt="WDS 400">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="profile_colored">WDS</span> 400</h4>
+						<h5>Характеристики</h5>
+						<p class="profile_text">Монтажная ширина рамы —    60 мм
+							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
+							<br>Толщина наружной стенки — 2.7 мм
+							<br>Количество камер в раме — 4
+							<br>Количество камер в створке — 4
+							<br>Максимальная толщина стеклопакета — 32 мм
+							<br>Контуры уплотнителя — 2
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn profile_btn text-uppercase">Заказать</button>
+					</div>
+				</div>
+				<div class="profile_card">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid profile_img" src="img/wds_8series.jpg" alt="WDS 8 Series">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="profile_colored">WDS</span> 8 Series</h4>
+						<h5>Характеристики</h5>
+						<p class="profile_text">Монтажная ширина рамы —    60 мм
+							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
+							<br>Толщина наружной стенки — 2.7 мм
+							<br>Количество камер в раме — 4
+							<br>Количество камер в створке — 4
+							<br>Максимальная толщина стеклопакета — 32 мм
+							<br>Контуры уплотнителя — 2
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn profile_btn text-uppercase">Заказать</button>
+					</div>
+				</div>
+				<div class="profile_card">
+					<div class="card-img-top card-img-top-250">
+						<img class="img-fluid profile_img" src="img/wds_7series.jpg" alt="WDS 7 Series">
+					</div>
+					<div class="card-body pt-2">
+						<h4><span class="profile_colored">WDS</span> 7 Series</h4>
+						<h5>Характеристики</h5>
+						<p class="profile_text">Монтажная ширина рамы —    60 мм
+							<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
+							<br>Толщина наружной стенки — 2.7 мм
+							<br>Количество камер в раме — 4
+							<br>Количество камер в створке — 4
+							<br>Максимальная толщина стеклопакета — 32 мм
+							<br>Контуры уплотнителя — 2
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn profile_btn text-uppercase">Заказать</button>
+					</div>
+				</div>
+			</div>
+		<!--END Slider-->
+			<div class="row profile_footer">
+				<div>Вызов замерщика <span class="colored"><b>бесплатно</b></span></div>
+				<button class="btn profile_btn profile_btn__grey text-uppercase">Позвонить</button>
 			</div>
 		</div>
-
+		<!--END SECTION PROFILE-->
+		<!--SECTION WORK-->
+		<div class="text-center work" id="work">
+			<h2>Наши <span class="colored">работы</span></h2>
+			<div class="line ml-auto mr-auto"></div>
+			<div class="work_wrap">
+				<div class="work_item"></div>
+				<div class="work_item"></div>
+				<div class="work_item"></div>
+				<div class="work_item"></div>
+				<div class="work_item"></div>
+				<div class="work_item"></div>
+				<div class="work_item"></div>
+				<div class="work_item"></div>
+				<div class="work_item"></div>
+			</div>
+			<div class="work_footer">
+				<div><span class="colored">Более 5.000</span><b> довольных клиентов</b></div>
+				<button class="btn work_btn text-uppercase">Получить консультацию</button>
+			</div>
+		</div>
+		<!--END SECTION WORK-->
+		<!--SECTION ADVANTAGES-->
+		<div class="text-center advantages" id="advantages">
+			<h2><span class="colored">Преимущества</span> работы с нами</h2>
+			<div class="line ml-auto mr-auto"></div>
+			<div class="advantages_wrap">
+				<div class="advantages_item">
+					<h6>Качество</h6>
+					<p class="advantages_text">
+						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
+						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+					</p>
+					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
+				</div>
+				<div class="advantages_item">
+					<h6>Надежность</h6>
+					<p class="advantages_text">
+						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
+						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+					</p>
+					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
+				</div>
+				<div class="advantages_item">
+					<h6>Гарантия</h6>
+					<p class="advantages_text">
+						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
+						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+					</p>
+					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
+				</div>
+				<div class="advantages_item">
+					<h6>Опыт</h6>
+					<p class="advantages_text">
+						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
+						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+					</p>
+					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
+				</div>
+				<div class="advantages_item">
+					<h6>Долговечность</h6>
+					<p class="advantages_text">
+						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
+						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+					</p>
+					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
+				</div>
+				<div class="advantages_item">
+					<h6>Экологичность</h6>
+					<p class="advantages_text">
+						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
+						<br>Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
+					</p>
+					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
+				</div>
+			</div>
+		</div>
+		<!--END SECTION ADVANTAGES-->
+		<!--SECTION PLANT-->
+		<div class="text-center plant" id="plant">
+			<h2>Завод <span class="colored">изготовитель</span></h2>
+			<div class="line ml-auto mr-auto"></div>
+			<div class="plant_wrap ml-auto mr-auto">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/yi05uS374NY" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<!--END SECTION PLANT-->
+		<!--SECTION CONTACTS-->
+		<div class="text-center contacts" id="contacts">
+			<h2>Наши <span class="colored">контакты</span></h2>
+			<div class="line ml-auto mr-auto"></div>
+			<div class="contacts_wrap ml-auto mr-auto">
+				<div class="contacts_item" id="map"></div>
+				<div class="contacts_item">
+					<form method="post" class="header_form">
+						<div class="text-uppercase text-center ml-auto mr-auto mb-3">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 30%</span></div>
+						<div class="">
+							<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
+						</div>
+						<div class="">
+							<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
+						</div>
+						<div class="">
+							<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
+						</div>
+						<div class="text-center">
+							<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Получить скидку</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--END SECTION CONTACTS-->
 	</main>
-
-
-		<!--<div class="wrap wrap_why_us"  id="why_us">-->
-			<!--<div class="part why_us text-center">-->
-				<!--<h2 class="animatable fadeInUp why_us_title">Why us</h2>-->
-				<!--<p class="text-left animatable fadeInUp why_us_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class="wrap wrap_guarantees" id="guarantees">-->
-			<!--<div class="part guarantees text-center">-->
-				<!--<h2 class="animatable fadeInUp guarantees_title guarantees_title__light">guarantees</h2>-->
-				<!--<div class="row guarantees_item">-->
-					<!--<div class="animatable fadeInUp col-sm item d-flex align-items-center">-->
-						<!--<div class="row d-flex align-items-center">-->
-							<!--<div class="col-4 forma_svg text-center">-->
-								<!--<svg class="forma"><use xlink:href="#forma"/></svg>-->
-							<!--</div>-->
-							<!--<div class="col-8 text-left">-->
-								<!--<h3>Lorem ipsum</h3>-->
-								<!--<p class="guarantees_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<div class="animatable fadeInUp col-sm item d-flex align-items-center">-->
-						<!--<div class="row d-flex align-items-center">-->
-							<!--<div class="col-4 forma_svg text-center">-->
-								<!--<svg class="forma"><use xlink:href="#forma"/></svg>-->
-							<!--</div>-->
-							<!--<div class="col-8 text-left">-->
-								<!--<h3>Lorem ipsum</h3>-->
-								<!--<p class="guarantees_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<div class="w-100"></div>-->
-					<!--<div class="animatable fadeInUp col-sm item d-flex align-items-center">-->
-						<!--<div class="row d-flex align-items-center">-->
-							<!--<div class="col-4 forma_svg text-center">-->
-								<!--<svg class="forma"><use xlink:href="#forma"/></svg>-->
-							<!--</div>-->
-							<!--<div class="col-8 text-left">-->
-								<!--<h3>Lorem ipsum</h3>-->
-								<!--<p class="guarantees_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<div class="animatable fadeInUp col-sm item d-flex align-items-center">-->
-						<!--<div class="row d-flex align-items-center">-->
-							<!--<div class="col-4 forma_svg text-center">-->
-								<!--<svg class="forma"><use xlink:href="#forma"/></svg>-->
-							<!--</div>-->
-							<!--<div class="col-8 text-left">-->
-								<!--<h3>Lorem ipsum</h3>-->
-								<!--<p class="guarantees_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-			<!--<div class="bg2_guarantees _parallax">-->
-				<!--<img class="img-fluid" src="img/photo_1.png" alt="stone">-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class="wrap wrap_hesitate" id="hesitate">-->
-			<!--<div class="part hesitate text-center">-->
-				<!--<h2 class="animatable fadeInUp hesitate_title">Still hesitating?</h2>-->
-				<!--<p class="animatable fadeInUp hesitate_subtitle">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui</p>-->
-				<!--<div class="row d-flex align-items-center justify-content-center">-->
-					<!--<div class="home_btn home_btn__med">-->
-						<!--<a href="#order" class="btn link_btn link_btn__med">ORDER</a>-->
-					<!--</div>-->
-					<!--<div class="home_btn home_btn__chat home_btn__med">-->
-						<!--<a href="#order" class="btn link_btn link_btn__med">CHAT US</a>-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class="wrap wrap_testimonials" id="testimonials">-->
-			<!--<div class="testimonials text-center">-->
-				<!--<h2 class="animatable fadeInUp testimonials_title guarantees_title__light">Testimonials</h2>-->
-
-			<!--</div>-->
-			<!--<div class="bg2_testimonials _parallax">-->
-				<!--<img class="img-fluid" src="img/cloud1.png" alt="cloud">-->
-			<!--</div>-->
-			<!--<div class="bg3_testimonials">-->
-				<!--<img class="img-fluid" src="img/cloud2.png" alt="cloud">-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class="wrap wrap_order" id="order">-->
-			<!--<div class="order text-center">-->
-			<!--<h2 class="animatable fadeInUp order_title">Order right now!</h2>-->
-			<!--<p class="animatable fadeInUp text-left order_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa</p>-->
-			<!--<div class="home_btn home_btn__big order_btn"><a href="#" class="btn link_btn link_btn__big">ORDER</a></div>-->
-			<!--</div>-->
-		<!--</div>-->
-
 	<footer class="footer">
-		<p class="text-center footer_text">© Copyright 2017 by   All rights reserved</p>
+		<p class="text-center footer_text">© 2007-2018 Pedash H.</p>
 	</footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="libs/slick.min.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
-<!--<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>-->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-<script src="libs/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script src="libs/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIt6seHNcR-VUHx8CT42PG8S1_K8LDJPs" defer></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
