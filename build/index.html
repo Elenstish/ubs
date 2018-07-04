@@ -23,7 +23,7 @@
 					<button class="btn header_btn text-uppercase">Вызов замерщика</button>
 				</div>
 				<div>
-					<ul clas="my-2 my-md-0">
+					<ul clas="">
 						<li class="nav-item">099 888 88 88</li>
 						<li class="nav-item">067 888 88 88</li>
 						<li class="nav-item">063 888 88 88</li>
@@ -309,21 +309,37 @@
 			<div class="contacts_wrap ml-auto mr-auto">
 				<div class="contacts_item" id="map"></div>
 				<div class="contacts_item">
-					<form method="post" class="header_form">
-						<div class="text-uppercase text-center ml-auto mr-auto mb-3">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 30%</span></div>
-						<div class="">
-							<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
-						</div>
-						<div class="">
-							<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
-						</div>
-						<div class="">
-							<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
-						</div>
-						<div class="text-center">
-							<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Получить скидку</button>
-						</div>
-					</form>
+					<div class="contacts_info">
+						<ul clas="">
+							<li class="nav-item text-left  text-uppercase">Телефоны:</li>
+							<li class="nav-item text-left">093 888 88 88</li>
+							<li class="nav-item text-left">095 888 88 88</li>
+							<li class="nav-item text-left">096 888 88 88</li>
+						</ul>
+						<ul clas="">
+							<li class="nav-item text-left  text-uppercase">Адрес:</li>
+							<li class="nav-item text-left">г. Запорожье, ул. Паромонова, д.4</li>
+							<li class="nav-item text-left  text-uppercase">e-mail:</li>
+							<li class="nav-item text-left">uyutbudservis.zp@ukr.net</li>
+						</ul>
+					</div>
+					<div class="contacts_formWrap">
+						<form method="post" class="contacts_form">
+							<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 30%</span></div>
+							<div class="">
+								<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
+							</div>
+							<div class="">
+								<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
+							</div>
+							<div class="mb-4">
+								<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
+							</div>
+							<div class="text-center">
+								<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Получить</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

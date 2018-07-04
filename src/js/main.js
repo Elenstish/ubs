@@ -91,10 +91,10 @@ $(document).ready(function() {
     function initMap() {
         var map = void 0;
         var mapContainer = document.querySelector('#map');
-        var mapCoordinates = { lat: 55.681284, lng: 37.684120 };
+        var mapCoordinates = { lat: 47.785054, lng: 35.212481 };
         var mapOptions = {
             center: mapCoordinates,
-            zoom: 11,
+            zoom: 16,
             styles: [
                 {
                     "featureType": "administrative",
@@ -227,7 +227,7 @@ $(document).ready(function() {
         map = new google.maps.Map(mapContainer, mapOptions);
 
         var marker = new google.maps.Marker({
-            position: { lat: 55.681284, lng: 37.684120 },
+            position: { lat: 47.785054, lng: 35.212481 },
             map: map,
             icon: "img/pointer.png"
         });
