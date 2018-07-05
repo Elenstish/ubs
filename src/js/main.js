@@ -241,3 +241,4 @@ $(document).ready(function() {
 
     document.addEventListener('DOMContentLoaded', initMap);
 })();
+
