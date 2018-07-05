@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:700|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
 </head>
 <body>
 	<header class="header">
@@ -228,6 +229,21 @@
 		<div class="text-center profile" id="profile">
 			<h2>Наш <span class="colored">профиль</span></h2>
 			<div class="line ml-auto mr-auto"></div>
+			<a href="https://unsplash.it/1200/768.jpg?image=263" data-toggle="lightbox" data-gallery="hidden-images" class="col-4">
+				<img src="https://unsplash.it/600.jpg?image=263" class="img-fluid">
+			</a>
+			<a href="https://unsplash.it/1200/768.jpg?image=264" data-toggle="lightbox" data-gallery="hidden-images" class="col-4">
+				<img src="https://unsplash.it/600.jpg?image=264" class="img-fluid">
+			</a>
+			<a href="https://unsplash.it/1200/768.jpg?image=265" data-toggle="lightbox" data-gallery="hidden-images" class="col-4">
+				<img src="https://unsplash.it/600.jpg?image=265" class="img-fluid">
+			</a>
+			<!-- elements not showing, use data-remote -->
+			<div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=264" data-title="Hidden item 1"></div>
+			<div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://www.youtube.com/embed/b0jqPvpn3sY" data-title="Hidden item 2"></div>
+			<div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=265" data-title="Hidden item 3"></div>
+			<div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=266" data-title="Hidden item 4"></div>
+			<div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=267" data-title="Hidden item 5"></div>
 			<div class="profile_wrap">
 				<div class="profile_item">
 					<div class="card-body"><h3>Эконом</h3></div>
@@ -413,6 +429,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="libs/bootstrap.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIt6seHNcR-VUHx8CT42PG8S1_K8LDJPs" defer></script>
