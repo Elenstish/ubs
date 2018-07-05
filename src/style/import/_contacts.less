@@ -23,18 +23,43 @@
 	}
 	&_info {
 		display: flex;
+		padding-top: 1rem;
+		@media only screen and (max-width: @md) {
+			justify-content: center;
+			align-items: center;
+		}
+		@media only screen and (max-width: @sm) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 		ul {
 			margin-left: 7rem;
 			font-family: @fontPTSans;
+			@media only screen and (max-width: @sm) {
+				margin-left: auto;
+				margin-right: auto;
+			}
 			li {
 				margin-bottom: 2rem;
+				@media only screen and (max-width: @xl) {
+					font-size: 2.4rem;
+				}
+				@media only screen and (max-width: @sm) {
+
+				}
 			}
 		}
+
 	}
-	&_formWrap {
+	&_form-wrap {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
+		@media only screen and (max-width: @md) {
+			position: relative;
+		}
 	}
 	&_form {
 		width: 100%;
@@ -55,8 +80,26 @@
 			border-radius: 1rem;
 		}
 	}
+	&_mail {
+		@media only screen and (max-width: @sm) {
+			font-size: 5rem;
+		}
+	}
+}
+
+.scroll_up {
+	width: 5.5rem;
+	height: 5.5rem;
+	border-radius: 50%;
+	position: fixed;
+	right: .5rem;
+	bottom: .5rem;
+	padding: 0;
+	margin: 0;
+	transition: .25s;
+	background: rgba(214, 160, 15, .5) url(../img/top.png) 50% no-repeat;
 }
 
 #map {
-	height: 97rem;
+	min-height: 97rem;
 }

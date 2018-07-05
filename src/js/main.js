@@ -45,21 +45,27 @@ $(document).ready(function() {
         ]
     });
 
-//     // --------- scroll up
-//     $(window).scroll(function () {
-//         if ($(this).scrollTop() > 0) {
-//             $('#scroller').fadeIn();
-//         } else {
-//             $('#scroller').fadeOut();
-//         }
-//     });
-//     $('#scroller').click(function () {
-//         $('body,html').animate({
-//             scrollTop: 0
-//         }, 900);
-//         return false;
-//     });
-//
+    // --------- scroll up
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('#_toTop').fadeIn();
+        } else {
+            $('#_toTop').fadeOut();
+        }
+    });
+    $('#_toTop').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 900);
+        return false;
+    });
+
+    // light box
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+
 //   // ANIMATION
 // 	var doAnimations = function() {
 //
