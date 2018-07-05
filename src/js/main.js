@@ -45,12 +45,6 @@ $(document).ready(function() {
         ]
     });
 
-//    ------------ gallery
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
-
 //     // --------- scroll up
 //     $(window).scroll(function () {
 //         if ($(this).scrollTop() > 0) {
@@ -247,4 +241,3 @@ $(document).ready(function() {
 
     document.addEventListener('DOMContentLoaded', initMap);
 })();
-
