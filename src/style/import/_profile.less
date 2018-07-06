@@ -5,6 +5,9 @@
 	background-color: @colorDark;
 	color: @colorLight;
 	padding-top: 7rem;
+	@media only screen and (max-width: @xl) {
+		padding-top: 4rem;
+	}
 	&_wrap {
 		width: inherit;
 		display: flex;
@@ -14,6 +17,7 @@
 		margin-bottom: 10rem;
 		@media only screen and (max-width: @xl) {
 			width: 90%;
+			margin-top: 4rem;
 		}
 		@media only screen and (max-width: @md) {
 			width: 100%;
@@ -76,7 +80,7 @@
 		position:absolute;
 		top: -10px;
 		left: 50px;
-		min-width: 320px;
+
 	}
 }
 
