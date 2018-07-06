@@ -17,6 +17,7 @@
 	}
 	&_item {
 		max-width: 41.7rem;
+		min-width: 32rem;
 		margin: 1rem;
 		padding: 3rem;
 		height: 40rem;
@@ -36,5 +37,15 @@
 		bottom: 0;
 		width: 100%;
 
+	}
+	&_h2 {
+		@media only screen and (max-width: @xs) {
+			font-size: 6rem;
+		}
+	}
+	&_h6 {
+		@media only screen and (max-width: @xs) {
+			font-size: 3.4rem;
+		}
 	}
 }

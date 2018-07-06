@@ -4,6 +4,10 @@
     &_items {
         margin-top: 8rem;
         margin-bottom: 10rem;
+        @media (max-width: @xl) {
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
     }
     &_services li {
         display: inline;
@@ -34,8 +38,8 @@
     &_card {
         height: 76.8rem !important;
         position: relative;
-        &:hover,
-        &:active {
+        @media (max-width: @xl) {
+            height: 70rem !important;
         }
     }
     &_footer{

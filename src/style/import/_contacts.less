@@ -1,10 +1,13 @@
 //------CONTACTS
 .contacts {
 	width: 100%;
-	padding-top: 10rem;
+	padding-top: 5rem;
+    @media (max-width: @xl) {
+      padding-top: 3rem;
+    }
 	&_wrap {
 		width: 100%;
-		margin-top: 8rem;
+		margin-top: 5rem;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -57,9 +60,6 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		@media only screen and (max-width: @md) {
-			position: relative;
-		}
 	}
 	&_form {
 		width: 100%;
@@ -70,8 +70,12 @@
 		flex-direction: column;
 		justify-content: center;
 		padding: 5rem 7rem;
+        @media only screen and (max-width: @xl) {
+          padding: 2rem 3rem;
+        }
 		button {
 			color: @colorLight;
+            padding: 1rem 4rem;
 		}
 		input {
 			margin-bottom: 3rem;
@@ -101,5 +105,8 @@
 }
 
 #map {
-	min-height: 97rem;
+	min-height: 95rem;
+    @media only screen and (max-width: @xl) {
+      min-height: 75rem;
+    }
 }

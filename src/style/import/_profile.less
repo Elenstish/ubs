@@ -47,6 +47,10 @@
 		padding-right: 2.4rem;
 		margin-top: 6rem;
 		margin-bottom: 9rem;
+		@media only screen and (max-width: @xs) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 	}
 	&_img-wrap {
 		height: 25rem;
@@ -60,16 +64,19 @@
 		position:absolute;
 		top: -70px;
 		left: -20px;
+		min-width: 320px;
 	}
 	&_img2 {
 		position:absolute;
 		top: -30px;
 		left: 30px;
+		min-width: 320px;
 	}
 	&_img3 {
 		position:absolute;
 		top: -10px;
 		left: 50px;
+		min-width: 320px;
 	}
 }
 
