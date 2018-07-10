@@ -13,7 +13,7 @@ function initMap() {
     var centerLatLng = new google.maps.LatLng(47.785054, 35.212481);
     var mapOptions = {
         center: centerLatLng,
-        zoom: 15
+        zoom: 16
     };
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
     infoWindow = new google.maps.InfoWindow();
@@ -41,7 +41,7 @@ function addMarker(latLng, name, address) {
         title: name,
         icon: {
             url: "img/pointer.png",
-            // scaledSize: new google.maps.Size(30, 60)
+            scaledSize: new google.maps.Size(54, 60)
         },
     });
     google.maps.event.addListener(marker, "click", function() {
