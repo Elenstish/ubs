@@ -1,3 +1,229 @@
+// ----------- MAP
+
+var markersData = [
+    {
+        lat: 47.785054,     // Широта
+        lng: 35.212481,    // Долгота
+        name: "УютБудСервис", // Произвольное название, которое будем выводить в информационном окне
+        // address:"Новинский бульвар, с1121069"   // Адрес, который также будем выводить в информационном окне
+    }
+];
+
+var map, infoWindow;
+function initMap() {
+    var centerLatLng = new google.maps.LatLng(47.785054, 35.212481);
+    var mapOptions = {
+        center: centerLatLng,
+        zoom: 16,
+        styles: [
+            {
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#f5f5f5"
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#616161"
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "color": "#f5f5f5"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.land_parcel",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#bdbdbd"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#eeeeee"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#757575"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#e5e5e5"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#deb33e"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#757575"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#dadada"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#616161"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.line",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#e5e5e5"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.station",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#eeeeee"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#c9c9c9"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                ]
+            }
+        ],
+    };
+    map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+    infoWindow = new google.maps.InfoWindow();
+    google.maps.event.addListener(map, "click", function() {
+        infoWindow.close();
+    });
+    // Определяем границы видимой области карты в соответствии с положением маркеров
+    var bounds = new google.maps.LatLngBounds();
+    for (var i = 0; i < markersData.length; i++){
+        var latLng = new google.maps.LatLng(markersData[i].lat, markersData[i].lng);
+        var name = markersData[i].name;
+        var address = markersData[i].address;
+        addMarker(latLng, name, address);
+        // Расширяем границы нашей видимой области, добавив координаты нашего текущего маркера
+        // bounds.extend(latLng);
+    }
+    // Автоматически масштабируем карту так, чтобы все маркеры были в видимой области карты
+    // map.fitBounds(bounds);
+}
+// google.maps.event.addDomListener(window, "load", initMap);
+function addMarker(latLng, name, address) {
+    var marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        title: name,
+        icon: {
+            url: "img/pointer.png",
+            // scaledSize: new google.maps.Size(30, 60)
+        },
+    });
+    google.maps.event.addListener(marker, "click", function() {
+        var contentString = '<div class="infowindow">' +
+            '<h3>' + name + '</h3>' +
+            '<p>' + address + '</p>' +
+            '</div>';
+        infoWindow.setContent(contentString);
+        infoWindow.open(map, marker);
+    });
+}
+
 $(document).ready(function() {
 
 // --------- scroll down
@@ -84,160 +310,3 @@ $(document).ready(function() {
 //
 });
 
-// ----------- MAP
-
-(function () {
-
-    function initMap() {
-        var map = void 0;
-        var mapContainer = document.querySelector('#map');
-        var mapCoordinates = { lat: 47.785054, lng: 35.212481 };
-        var mapOptions = {
-            center: mapCoordinates,
-            zoom: 16,
-            styles: [
-                {
-                    "featureType": "administrative",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": "-100"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "administrative.province",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": -100
-                        },
-                        {
-                            "lightness": 65
-                        },
-                        {
-                            "visibility": "on"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": -100
-                        },
-                        {
-                            "lightness": "50"
-                        },
-                        {
-                            "visibility": "simplified"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": "-100"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "simplified"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.arterial",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "lightness": "30"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.local",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "lightness": "40"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "transit",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": -100
-                        },
-                        {
-                            "visibility": "simplified"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "hue": "#ffff00"
-                        },
-                        {
-                            "lightness": -25
-                        },
-                        {
-                            "saturation": -97
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "labels",
-                    "stylers": [
-                        {
-                            "lightness": -25
-                        },
-                        {
-                            "saturation": -100
-                        }
-                    ]
-                }
-            ],
-            disableDefaultUI: true,
-            scrollwheel: false
-        };
-
-        map = new google.maps.Map(mapContainer, mapOptions);
-
-        var marker = new google.maps.Marker({
-            position: { lat: 47.785054, lng: 35.212481 },
-            map: map,
-            icon: "img/pointer.png"
-        });
-
-        google.maps.event.addDomListener(window, "resize", function () {
-            var center = map.getCenter();
-            google.maps.event.trigger(map, "resize");
-            map.setCenter(center);
-        });
-    }
-
-    document.addEventListener('DOMContentLoaded', initMap);
-})();
