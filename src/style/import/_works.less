@@ -31,7 +31,6 @@
         padding-right: 7rem;
         &__grey {
             background-color: @colorLightDark;
-            margin-left: 6rem;
         }
     }
     &_card {
@@ -41,9 +40,20 @@
             height: 70rem !important;
         }
     }
+    &_item {
+        width: 100%;
+        height: 31rem;
+
+    }
+    &_img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 100%;
+    }
     &_footer{
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
         text-transform: uppercase;
         font-size: 4rem;
         width: 90%;
@@ -58,4 +68,50 @@
 .card_btn{
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
 }
+.card_text {
+    padding-left: 5rem;
+}
+.modal_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto 5rem auto;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  position: relative;
+}
+
+.modal_item {
+  max-width: 35rem;
+  min-width: 29rem;
+  margin: 1rem;
+  padding: 3rem;
+  position: relative;
+}
+.modal_h4 {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.modal_text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+.modal_close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+}
+

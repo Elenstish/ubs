@@ -60,12 +60,6 @@ $(document).ready(function() {
         return false;
     });
 
-    // light box
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
-
 //   // ANIMATION
 // 	var doAnimations = function() {
 //

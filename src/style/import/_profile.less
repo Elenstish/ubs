@@ -19,10 +19,12 @@
 	}
 	&_item {
 		width: 41.7rem;
-		height: 41.7rem;
 		background-color: @colorLight;
 		margin: 1rem;
 		color: @colorDark;
+		@media only screen and (max-width: @xs) {
+			width: 32rem;
+		}
 	}
 	&_footer{
 		margin-bottom: 3rem;
@@ -50,30 +52,53 @@
 		}
 	}
 	&_img-wrap {
-		height: 25rem;
-		width: inherit;
+		width: 90%;
 		overflow:hidden;
 		text-align: center;
 		margin:0 auto;
 		position:relative;
+		overflow:hidden;
 	}
-	&_img1 {
-		position:absolute;
-		top: -70px;
-		left: -20px;
-		min-width: 320px;
-	}
-	&_img2 {
-		position:absolute;
-		top: -30px;
-		left: 30px;
-		min-width: 320px;
-	}
-	&_img3 {
-		position:absolute;
-		top: -10px;
-		left: 50px;
-
+	&_img {
+		transform: translateZ(0);
+		transition: all 1s ease-out 0s;
+		overflow:hidden;
+        display: block;
+        &:hover,
+        &:active {
+              transform: scale(1.1);
+              overflow:hidden;
+        }
 	}
 }
 
+.modal_profile {
+	&-text{
+		text-align: left;
+		font-size: 1.8rem;
+		line-height: 3rem;
+		padding-bottom: 3rem;
+		margin-left: 3rem;
+	}
+	&-btn {
+		background-color: @colorDark;
+		color: @colorLight;
+		font-size: 2.8rem;
+		font-family: @fontCuprum;
+		font-weight: 700;
+		height: 6rem;
+		line-height: 5.7rem;
+		padding-left: 7rem;
+		padding-right: 7rem;
+		&__grey {
+			background-color: @colorLightDark;
+			margin-left: 6rem;
+		}
+	}
+	&-card {
+		background-color: @colorLight;
+	}
+	&-item {
+		width: 100%;
+	}
+}

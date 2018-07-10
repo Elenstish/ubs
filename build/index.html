@@ -15,12 +15,47 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 </head>
 <body>
+<!--<div class="header_menu sticky-top">-->
+	<!--<nav class="navbar navbar-expand-md">-->
+		<!--<a class="navbar-brand" href="#"><img src="img/logo.png" alt="UBS"></a>-->
+		<!--<div>-->
+			<!--<button class="btn header_btn text-uppercase" data-toggle="modal" data-target="#ModalCenterCall">Вызов замерщика</button>-->
+		<!--</div>-->
+		<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">-->
+		<!--<span class="navbar-toggler-icon"></span>-->
+		<!--</button>-->
+		<!--<div class="navbar-collapse" id="mainMenu">-->
+			<!--<ul>-->
+				<!--<li class="nav-item">-->
+					<!--<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><b>Меню</b><span id="name"></span></a>-->
+					<!--<ul id="login-dp" class="dropdown-menu dropdown-menu-right">-->
+						<!--<li class="nav-item  active">-->
+							<!--<a class="nav-link" href="#works">Услуги</a>-->
+						<!--</li>-->
+						<!--<li class="nav-item">-->
+							<!--<a class="nav-link header_link" href="#profile">Профиль</a>-->
+						<!--</li>-->
+						<!--<li class="nav-item">-->
+							<!--<a class="nav-link header_link" href="#advantage">Преимущества</a>-->
+						<!--</li>-->
+						<!--<li class="nav-item">-->
+							<!--<a class="nav-link header_link" href="#plant">Завод</a>-->
+						<!--</li>-->
+						<!--<li class="nav-item">-->
+							<!--<a class="nav-link header_link" href="#contacts">Контакты</a>-->
+						<!--</li>-->
+					<!--</ul>-->
+				<!--</li>-->
+			<!--</ul>-->
+		<!--</div>-->
+	<!--</nav>-->
+<!--</div>-->
 	<header class="header">
 		<div class="header_menu sticky-top">
 			<nav class="navbar d-flex justify-content-between header_nav">
 				<a class="navbar-brand" href="#"><img src="img/logo.png" alt="UBS"></a>
 				<div>
-					<button class="btn header_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Вызов замерщика</button>
+					<button class="btn header_btn text-uppercase" data-toggle="modal" data-target="#ModalCenterCall">Вызов замерщика</button>
 				</div>
 				<div>
 					<ul>
@@ -37,7 +72,7 @@
 				<div class="collapse navbar-collapse justify-content-md-center" id="navbar">
 					<ul class="navbar-nav text-uppercase">
 						<li class="nav-item header_item">
-							<a class="nav-link header_link" href="#works">Работы</a>
+							<a class="nav-link header_link" href="#works">Услуги</a>
 						</li>
 						<li class="nav-item active header_item">
 							<a class="nav-link header_link" href="#profile">Профиль</a>
@@ -59,7 +94,7 @@
 			<div class="col-sm-10">
 				<div class="row">
 					<div class="col-lg-8 col-sm-6 pl-3 pr-3">
-						<h1>окна<br><span class="colored header_h1">балконы</span></h1>
+						<h1>Создадим<br><span class="colored"> уют</span> вместе</h1>
 						<div class="header_text">
 							Энергоэффективность -
 							<br>Металлопластиковые окна, Балконы.
@@ -71,7 +106,7 @@
 					</div>
 					<div class="col-lg-4 col-sm-6 header_aside">
 						<form method="post" class="header_form">
-							<div class="text-uppercase text-center ml-auto mr-auto mb-3">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 30%</span></div>
+							<div class="text-uppercase text-center ml-auto mr-auto mb-3">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
 							<div class="">
 								<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
 							</div>
@@ -91,7 +126,7 @@
 		</div>
 		<div class="header_footer text-center">
 			<div>Хотите узнать как выбрать окна?</div>
-			<button class="btn header_btn header_btn__dark text-uppercase" data-toggle="modal" data-target="#ModalCenter">получить консультацию</button>
+			<button class="btn header_btn header_btn__dark text-uppercase" data-toggle="modal" data-target="#ModalCenterGet">получить консультацию</button>
 		</div>
 	</header>
 	<main class="main">
@@ -117,29 +152,27 @@
 		<!--Slider-->
 			<div class="works_slider responsive">
 				<div class="works_card">
-					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid works_img" src="img/img_1.jpg" alt="жалюзи">
+					<div class="works_item" data-toggle="modal" data-target="#ModalCenterImg3">
+						<img class="works_img" src="img/img_1.jpg" alt="жалюзи">
 					</div>
-					<div class="card-body pt-2">
+					<div class="card-body pt-2 card_text" data-toggle="modal" data-target="#ModalCenterImg3">
 						<h4><span class="colored">Жалюзи</span></h4>
-						<h5>Услуги</h5>
 						<p class="works_text">Горизонтальные
 							<br>Вертикальные
 							<br>Рулонные
 							<br>Римские шторы
 						</p>
 					</div>
-					<div class="card_btn">
+					<div class="card_btn ml-auto mr-auto">
 						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
-					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid works_img" src="img/img_2.jpg" alt="заборы">
+					<div class="works_item" data-toggle="modal" data-target="#ModalCenterImg3">
+						<img class="works_img" src="img/img_2.jpg" alt="заборы">
 					</div>
-					<div class="card-body pt-2">
+					<div class="card-body pt-2 card_text" data-toggle="modal" data-target="#ModalCenterImg3">
 						<h4><span class="colored">заборы</span></h4>
-						<h5>Услуги</h5>
 						<p class="works_text">монтажная глубина 70 мм
 							<br>толщина внешней стенки 2,7 мм
 							<br>наклон дренажа 2°
@@ -152,12 +185,11 @@
 					</div>
 				</div>
 				<div class="works_card">
-					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid works_img" src="img/img_3.jpg" alt="балконы">
+					<div class="works_item" data-toggle="modal" data-target="#ModalCenterImg3">
+						<img class="works_img" src="img/balkon.jpg" alt="балконы">
 					</div>
-					<div class="card-body pt-2">
+					<div class="card-body pt-2 card_text" data-toggle="modal" data-target="#ModalCenterImg3">
 						<h4><span class="colored">Балконы</span></h4>
-						<h5>Услуги</h5>
 						<p class="works_text"> Разварка
 							<br>Вынос
 							<br>Обшивка
@@ -170,12 +202,28 @@
 					</div>
 				</div>
 				<div class="works_card">
-					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid works_img" src="img/img_3.jpg" alt="балконы">
+					<div class="works_item" data-toggle="modal" data-target="#ModalCenterImg3">
+						<img class="works_img" src="img/lodji.jpg" alt="лоджии">
 					</div>
-					<div class="card-body pt-2">
+					<div class="card-body pt-2 card_text" data-toggle="modal" data-target="#ModalCenterImg3">
+						<h4><span class="colored">Лоджии</span></h4>
+						<p class="works_text"> Разварка
+							<br>Вынос
+							<br>Обшивка
+							<br>Утепление
+							<br>Пристройка
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+					</div>
+				</div>
+				<div class="works_card">
+					<div class="works_item">
+						<img class="works_img" src="img/windows.jpg" alt="окна">
+					</div>
+					<div class="card-body pt-2 card_text">
 						<h4><span class="colored">Металлопластиковые окна</span></h4>
-						<h5>Услуги</h5>
 						<p class="works_text">Конструкции любой сложности.
 							<br>Устройство откосов.
 						</p>
@@ -185,12 +233,57 @@
 					</div>
 				</div>
 				<div class="works_card">
-					<div class="card-img-top card-img-top-250">
-						<img class="img-fluid works_img" src="img/img_3.jpg" alt="балконы">
+					<div class="works_item">
+						<img class="works_img" src="img/doors.jpg" alt="двери">
 					</div>
-					<div class="card-body pt-2">
+					<div class="card-body pt-2 card_text">
+						<h4><span class="colored">Двери</span></h4>
+						<p class="works_text">Конструкции любой сложности.
+							<br>Устройство откосов.
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+					</div>
+				</div>
+				<div class="works_card">
+					<div class="works_item">
+						<img class="works_img" src="img/krovlia.jpg" alt="кровля">
+					</div>
+					<div class="card-body pt-2 card_text">
 						<h4><span class="colored">Кровля</span></h4>
-						<h5>Услуги</h5>
+						<p class="works_text">Стропильная система
+							<br>Подшивка
+							<br>Водосток
+							<br>Фронтоны
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+					</div>
+				</div>
+				<div class="works_card">
+					<div class="works_item">
+						<img class="works_img" src="img/maf.jpg" alt="маф">
+					</div>
+					<div class="card-body pt-2 card_text">
+						<h4><span class="colored">Мафы</span></h4>
+						<p class="works_text">Стропильная система
+							<br>Подшивка
+							<br>Водосток
+							<br>Фронтоны
+						</p>
+					</div>
+					<div class="card_btn">
+						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+					</div>
+				</div>
+				<div class="works_card">
+					<div class="works_item">
+						<img class="works_img" src="img/mohome.jpg" alt="модульные дома">
+					</div>
+					<div class="card-body pt-2 card_text">
+						<h4><span class="colored">Модульные дома</span></h4>
 						<p class="works_text">Стропильная система
 							<br>Подшивка
 							<br>Водосток
@@ -205,7 +298,9 @@
 		<!--END Slider-->
 			<div class="row works_footer ml-auto mr-auto">
 				<div>Вызов замерщика <span class="colored"><b>бесплатно</b></span></div>
-				<button class="btn works_btn works_btn__grey text-uppercase" data-toggle="modal" data-target="#ModalCenter">Позвонить</button>
+				<div class="pl-5">
+					<button class="btn works_btn works_btn__grey text-uppercase" data-toggle="modal" data-target="#ModalCenterCall">Позвонить</button>
+				</div>
 			</div>
 		</div>
 		<!--END SECTION WORK-->
@@ -214,109 +309,91 @@
 			<h2>Наш <span class="colored">профиль</span></h2>
 			<div class="line ml-auto mr-auto"></div>
 			<div class="profile_wrap ml-auto mr-auto">
-				<a href="img/wds_classic.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
 						<div class="card-body"><h3>Эконом</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img1 img-fluid" src="img/wds_classic.jpg" alt="WDS Classic">
+							<img class="profile_img img-fluid ml-auto mr-auto" src="img/wds_classic.jpg" alt="WDS Classic">
 						</div>
-						<div class="card-body pt-2">
-							<h4><span class="profile_colored">WDS</span> Classic</h4>
+						<div class="card-body">
+							<h4><span class="colored">WDS</span> Classic</h4>
 						</div>
 					</div>
-				</a>
-				<a href="img/wds_500.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenter500">
 						<div class="card-body"><h3>Эконом</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img2 img-fluid" src="img/wds_500.jpg" alt="WDS 500">
+							<img class="profile_img img-fluid" src="img/wds_500.jpg" alt="WDS 500">
 						</div>
 						<div class="card-body pt-2">
-							<h4><span class="profile_colored">WDS</span> 500</h4>
+							<h4><span class="colored">WDS</span> 500</h4>
 						</div>
 					</div>
-				</a>
-				<a href="img/wds_400.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenter400">
 						<div class="card-body"><h3>Эконом</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img3 img-fluid" src="img/wds_400.jpg" alt="WDS 400">
+							<img class="profile_img img-fluid" src="img/wds_400.jpg" alt="WDS 400">
 						</div>
 						<div class="card-body pt-2">
-							<h4><span class="profile_colored">WDS</span> 400</h4>
+							<h4><span class="colored">WDS</span> 400</h4>
 						</div>
 					</div>
-				</a>
-				<a href="img/wds_classic.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
 						<div class="card-body"><h3>Стандарт</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img1 img-fluid" src="img/wds_classic.jpg" alt="WDS Classic">
+							<img class="profile_img img-fluid" src="img/wds_classic.jpg" alt="WDS Classic">
 						</div>
 						<div class="card-body pt-2">
-							<h4><span class="profile_colored">WDS</span> 500 (600)</h4>
+							<h4><span class="colored">WDS</span> 500 (600)</h4>
 						</div>
 					</div>
-				</a>
-				<a href="img/wds_500.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
 						<div class="card-body"><h3>Стандарт</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img2 img-fluid" src="img/wds_500.jpg" alt="WDS 500">
+							<img class="profile_img img-fluid" src="img/wds_500.jpg" alt="WDS 500">
 						</div>
 						<div class="card-body pt-2">
-							<h4><span class="profile_colored">WDS</span> 700</h4>
+							<h4><span class="colored">WDS</span> 700</h4>
 						</div>
 					</div>
-				</a>
-				<a href="img/wds_400.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
 						<div class="card-body"><h3>Стандарт</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img3 img-fluid" src="img/wds_400.jpg" alt="WDS 400">
+							<img class="profile_img img-fluid" src="img/wds_400.jpg" alt="WDS 400">
 						</div>
 						<div class="card-body pt-2">
-							<h4><span class="profile_colored">Steko</span> S 500</h4>
+							<h4><span class="colored">Steko</span> S 500</h4>
 						</div>
 					</div>
-				</a>
-				<a href="img/wds_classic.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
 						<div class="card-body"><h3>Премиум</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img1 img-fluid" src="img/wds_classic.jpg" alt="WDS Classic">
+							<img class="profile_img img-fluid" src="img/wds_classic.jpg" alt="WDS Classic">
 						</div>
-						<div class="card-body pt-2">
-							<h4><span class="profile_colored">WDS</span> 800</h4>
+						<div class="card-body">
+							<h4><span class="colored">WDS</span> 800</h4>
 						</div>
 					</div>
-				</a>
-				<a href="img/wds_500.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
 						<div class="card-body"><h3>Премиум</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img2 img-fluid" src="img/wds_500.jpg" alt="WDS 500">
+							<img class="profile_img img-fluid" src="img/wds_500.jpg" alt="WDS 500">
 						</div>
 						<div class="card-body pt-2">
-							<h4><span class="profile_colored">ALUPLAST IDEEAL </span>8000</h4>
+							<h4><span class="colored">ALUPLAST IDEEAL </span>8000</h4>
 						</div>
 					</div>
-				</a>
-				<a href="img/wds_400.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-					<div class="profile_item">
+					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
 						<div class="card-body"><h3>Премиум</h3></div>
 						<div class="profile_img-wrap">
-							<img class="profile_img3 img-fluid" src="img/wds_400.jpg" alt="WDS 400">
+							<img class="profile_img img-fluid" src="img/wds_400.jpg" alt="WDS 400">
 						</div>
 						<div class="card-body pt-2">
-							<h4><span class="profile_colored">Steko S 600</span>S 600</h4>
+							<h4><span class="colored">Steko S 600</span>S 600</h4>
 						</div>
 					</div>
-				</a>
 			</div>
 			<div class="profile_footer ml-auto mr-auto">
 				<div class="text-center"><span class="colored">Более 5.000</span><b> довольных клиентов</b></div>
-				<button class="btn profile_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Получить консультацию</button>
+				<button class="btn profile_btn text-uppercase" data-toggle="modal" data-target="#ModalCenterGet">Получить консультацию</button>
 			</div>
 		</div>
 		<!--END SECTION PROFILE-->
@@ -406,7 +483,7 @@
 							<li class="nav-item text-md-left">096 888 88 88</li>
 						</ul>
 						<ul>
-							<li class="nav-item text-md-left  text-uppercase">Адрес:</li>
+							<li class="nav-item text-md-left text-uppercase">Адрес: 69001 Украина</li>
 							<li class="nav-item text-md-left">г. Запорожье, ул. Паромонова, д.4</li>
 							<li class="nav-item text-md-left  text-uppercase">e-mail:</li>
 							<li class="nav-item text-md-left contact_mail">uyutbudservis.zp@ukr.net</li>
@@ -414,7 +491,7 @@
 					</div>
 					<div class="contacts_form-wrap">
 						<form method="post" class="contacts_form">
-							<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 30%</span></div>
+							<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
 							<div class="">
 								<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
 							</div>
@@ -441,11 +518,14 @@
 		<p class="text-center footer_text">© 2007-2018 Pedash H.</p>
 	</footer>
 	<!--POP UP-->
-	<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	<div class="modal fade" id="ModalCenterCall" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
+				<div class="close modal_close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</div>
 				<form method="post" class="contacts_form">
-					<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 30%</span></div>
+					<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
 					<div class="">
 						<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
 					</div>
@@ -456,19 +536,174 @@
 						<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
 					</div>
 					<div class="text-center">
-						<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Получить</button>
+						<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Вызвать замерщика</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade" id="ModalCenterGet" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="close modal_close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</div>
+				<form method="post" class="contacts_form">
+					<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
+					<div class="">
+						<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
+					</div>
+					<div class="">
+						<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
+					</div>
+					<div class="mb-4">
+						<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
+					</div>
+					<div class="text-center">
+						<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Консультация</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="close modal_close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</div>
+				<form method="post" class="contacts_form">
+					<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
+					<div class="">
+						<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
+					</div>
+					<div class="">
+						<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
+					</div>
+					<div class="mb-4">
+						<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
+					</div>
+					<div class="text-center">
+						<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Получить скидку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<div class="modal fade" id="ModalCenterImg3" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal_wrap">
+			<div class="close modal_close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">X</span>
+			</div>
+			<h4 class="modal_h4"><span class="colored">Наши</span> услуги</h4>
+			<div class="line"></div>
+			<div class="modal_text">&#183;окна &nbsp;&#183;балконы &nbsp;&#183;лоджии</div>
+			<div class="modal_item">
+				<img class="img-fluid works_img" src="img/img_31.jpg" alt="балконы">
+			</div>
+			<div class="modal_item">
+				<img class="img-fluid works_img" src="img/img_32.jpg" alt="балконы">
+			</div>
+			<div class="modal_item">
+				<img class="img-fluid works_img" src="img/img_33.jpg" alt="балконы">
+			</div>
+			<div class="modal_item">
+				<img class="img-fluid works_img" src="img/img_34.jpg" alt="балконы">
+			</div>
+			<div class="modal_item">
+				<img class="img-fluid works_img" src="img/img_35.jpg" alt="балконы">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="ModalCenterClassic" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal_profile-card">
+			<div class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">X</span>
+			</div>
+			<h4 class="modal_h4"><span class="colored">WDS</span> Classic</h4>
+			<div class="line ml-auto mr-auto"></div>
+			<div class="modal_works-item">
+				<img class="img-fluid modal_profile-img" src="img/wds_classic.jpg" alt="WDS Classic">
+			</div>
+			<div class="card-body pt-2">
+				<h5 class="text-center">Характеристики</h5>
+				<p class="modal_profile-text">Монтажная ширина рамы — 60 мм
+					<br>U профильной системы (с армированием, если используется) — 1.65 Вт/Км²
+					<br>Толщина наружной стенки — 2.6 мм
+					<br>Количество камер в раме — 3
+					<br>Количество камер в створке — 3
+					<br>Максимальная толщина стеклопакета — 32 мм
+					<br>Контуры уплотнителя — 2
+					<br>Материал — металлопластиковые
+					<br>Тип конструкции системы(AD,MD) — AD
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="ModalCenter500" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal_profile-card">
+			<div class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">X</span>
+			</div>
+			<h4 class="modal_h4"><span class="colored">WDS</span> 500</h4>
+			<div class="line ml-auto mr-auto"></div>
+			<div class="modal_works-item">
+				<img class="img-fluid modal_profile-img" src="img/wds_500.jpg" alt="WDS Classic">
+			</div>
+			<div class="card-body pt-2">
+				<h5 class="text-center">Характеристики</h5>
+				<p class="modal_profile-text">монтажная глубина 70 мм
+					<br>толщина внешней стенки 2,7 мм
+					<br>наклон дренажа 2°
+					<br>фурнитурная система 12/20-13
+					<br>стеклопакет с размерами 24, 32 и 40 мм
+					<br>ширина наплыва 17 мм
+					<br>сопротивление теплопередачи 0,81 м ?°С/Вт
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="ModalCenter400" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal_profile-card">
+			<div class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">X</span>
+			</div>
+			<h4 class="modal_h4"><span class="colored">WDS</span> 400</h4>
+			<div class="line ml-auto mr-auto"></div>
+			<div class="modal_works-item">
+				<img class="img-fluid modal_profile-img" src="img/wds_400.jpg" alt="WDS Classic">
+			</div>
+			<div class="card-body pt-2">
+				<h5 class="text-center">Характеристики</h5>
+				<p class="modal_profile-text">Монтажная ширина рамы —    60 мм
+					<br>U профильной системы (с армированием, если используется) — 1.64 Вт/Км²
+					<br>Толщина наружной стенки — 2.7 мм
+					<br>Количество камер в раме — 4
+					<br>Количество камер в створке — 4
+					<br>Максимальная толщина стеклопакета — 32 мм
+					<br>Контуры уплотнителя — 2
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
 	<!--END POP UP-->
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
-	<script type="text/javascript" src="libs/lightbox/ekko-lightbox.min.js"></script>
 	<script src="libs/bootstrap.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIt6seHNcR-VUHx8CT42PG8S1_K8LDJPs" defer></script>
 	<script src="js/main.js"></script>
