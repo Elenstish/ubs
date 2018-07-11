@@ -16,14 +16,14 @@
   z-index: 999; }
 
 .img-circle {
-  background-color: #452149;
+  background-color: @linkColor;
   box-sizing: content-box;
   -webkit-box-sizing: content-box; }
 
 .circlephone {
   box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  border: 2px solid #452149;
+  border: 2px solid @linkColor;
   width: 0px;
   height: 150px;
   bottom: -25px;
@@ -42,7 +42,7 @@
 .circle-fill {
   box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  background-color: #452149;
+  background-color: @linkColor;
   width: 70px;
   height: 70px;
   bottom: 0px;
@@ -88,14 +88,14 @@
 }
 
 .img-circleblock img{
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 8px;
+  top: 9.5px;
 }
 .img-circle:hover {
   opacity: 1; }
@@ -147,49 +147,49 @@
 @-webkit-keyframes circle-anim {
   0% {
     -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
-    -webkit-opacity: .1; }
+    -webkit-opacity: .3; }
   30% {
     -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
-    -webkit-opacity: .5; }
+    -webkit-opacity: .6; }
   100% {
     -webkit-transform: rotate(0deg) scale(1) skew(1deg);
-    -webkit-opacity: .1; } }
+    -webkit-opacity: .3; } }
 
 @keyframes circle-anim {
   0% {
     -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
     transform: rotate(0deg) scale(0.5) skew(1deg);
-    opacity: .1; }
+    opacity: .3; }
   30% {
     -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
     transform: rotate(0deg) scale(0.7) skew(1deg);
-    opacity: .5; }
+    opacity: .6; }
   100% {
     -webkit-transform: rotate(0deg) scale(1) skew(1deg);
     transform: rotate(0deg) scale(1) skew(1deg);
-    opacity: .1; } }
+    opacity: .3; } }
 
 @-webkit-keyframes circle-fill-anim {
   0% {
     -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
-    opacity: .2; }
+    opacity: .4; }
   50% {
     -webkit-transform: rotate(0deg) scale(1) skew(1deg);
-    opacity: .2; }
+    opacity: .4; }
   100% {
     -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
-    opacity: .2; } }
+    opacity: .4; } }
 
 @keyframes circle-fill-anim {
   0% {
     -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
     transform: rotate(0deg) scale(0.7) skew(1deg);
-    opacity: .2; }
+    opacity: .4; }
   50% {
     -webkit-transform: rotate(0deg) scale(1) skew(1deg);
     transform: rotate(0deg) scale(1) skew(1deg);
-    opacity: .2; }
+    opacity: .4; }
   100% {
     -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
     transform: rotate(0deg) scale(0.7) skew(1deg);
-    opacity: .2; } }
+    opacity: .4; } }

@@ -4,12 +4,15 @@
 	background-color: @colorDark;
 	color: @colorLight;
 	&_wrap {
-		width: inherit;
+		width: 80%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		margin-top: 6rem;
 		margin-bottom: 4rem;
+		@media only screen and (max-width: 1920px) {
+			width: 70%;
+		}
 		@media only screen and (max-width: @xl) {
 			width: 90%;
 		}
@@ -20,10 +23,16 @@
 	&_item {
 		width: 41.7rem;
 		background-color: @colorLight;
-		margin: 1rem;
+		margin: 3rem;
 		color: @colorDark;
 		@media only screen and (max-width: @xs) {
 			width: 32rem;
+		}
+		@media only screen and (max-width: 1920px) {
+			margin: 4rem;
+		}
+		@media only screen and (max-width: 1600px) {
+			margin: 3rem;
 		}
 	}
 	&_footer{

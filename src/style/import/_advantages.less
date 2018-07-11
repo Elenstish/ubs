@@ -7,12 +7,15 @@
 		margin-bottom: 4rem;
 	}
 	&_wrap {
-		width: 100%;
+		width: 80%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		margin-top: 1rem;
 		margin-bottom: 5rem;
+		@media only screen and (max-width: 1920px) {
+			width: 70%;
+		}
 		@media only screen and (max-width: @xl) {
 			width: 90%;
 			margin-top: 1.3rem;
@@ -25,10 +28,16 @@
 	&_item {
 		max-width: 40rem;
 		min-width: 32rem;
-		margin: 1rem;
+		margin: 3rem;
 		padding: 3rem;
 		height: 45rem;
 		position: relative;
+		@media only screen and (max-width: 1920px) {
+			margin: 5rem;
+		}
+		@media only screen and (max-width: 1600px) {
+			margin: 3rem;
+		}
 	}
 	&_text {
 		text-align: left;
