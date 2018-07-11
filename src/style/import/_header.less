@@ -1,25 +1,31 @@
 //------HEADER
 .header {
-    margin-top: -21rem;
+    margin-top: -22rem;
 	color: @colorLight;
 	background: linear-gradient(rgba(0, 0, 0, 0.51) 100%, rgba(0, 0, 0, 0.51) 100%), url("../img/bg_home.png") 50% 0 no-repeat;
 	background-size: auto;
 	background-attachment: fixed !important;
     position: relative;
   @media only screen and (max-width: @lg) {
-    margin-top: -1px;
+    margin-top: -2px;
   }
 	&_menu {
 		background-color: rgba(69, 70, 71, .85);
 	}
 	&_wrap {
-      margin-right: 0 !important;
-      margin-left: 0 !important;
+      margin-right: auto;
+      margin-left: auto;
       padding-top: 29rem;
       padding-bottom: 7rem;
+      width: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
       @media only screen and (max-width: @lg) {
         padding-top: 5rem;
         padding-bottom: 5rem;
+        width: 90%;
       }
 	}
 	&_footer {
@@ -64,10 +70,13 @@
 		}
 	}
     &_list {
-        width: 90%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+      @media only screen and (max-width: @lg) {
+        width: 90%;
+      }
         @media only screen and (max-width: @sm) {
             flex-direction: column;
         }
@@ -77,7 +86,6 @@
 	}
     &_text {
         line-height: 4.8rem;
-        padding-right: 20rem;
         margin-bottom: 3.5rem;
         font-size: 3.6rem;
         @media only screen and (max-width: @lg) {
