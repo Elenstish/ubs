@@ -19,7 +19,7 @@
 		<nav class="navbar header_nav">
 			<a class="navbar-brand" href="#header"><img src="img/logo.png" alt="UBS"></a>
 			<div>
-				<button class="btn header_btn text-uppercase" data-toggle="modal" data-target="#ModalCenterCall">Вызов замерщика</button>
+				<button class="btn header_btn text-uppercase _btn">Вызов замерщика</button>
 			</div>
 			<div>
 				<ul>
@@ -64,16 +64,16 @@
 					<br>Лоджии под ключ -  качественно!!!!
 				</div>
 				<div class="header_btn-wrap">
-					<button type="button" class="btn header_btn header_btn__main text-uppercase" data-toggle="modal" data-target="#ModalCenter">
+					<button type="button" class="btn header_btn header_btn__main text-uppercase _btn2">
 						Связаться с нами
 					</button>
 				</div>
 			</div>
 			<div class="header_aside">
-				<form method="post" class="header_form">
+				<form method="post" class="header_form" action="func.php">
 					<div class="text-uppercase text-center ml-auto mr-auto mb-3">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
 					<div class="">
-						<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
+						<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="your_name"/>
 					</div>
 					<div class="">
 						<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
@@ -87,45 +87,9 @@
 				</form>
 			</div>
 		</div>
-		<!--<div class="row justify-content-center header_wrap">-->
-			<!--<div class="col-sm-10">-->
-				<!--<div class="row">-->
-					<!--<div class="col-lg-8 col-sm-12 pl-3 pr-3">-->
-						<!--<h1>Создадим<br><span class="colored"> уют</span> вместе</h1>-->
-						<!--<div class="header_text">-->
-							<!--Энергоэффективность - -->
-							<!--<br>Металлопластиковые окна, балконы.-->
-							<!--<br>Лоджии под ключ -  качественно!!!!-->
-						<!--</div>-->
-						<!--<div class="header_btn-wrap">-->
-							<!--<button type="button" class="btn header_btn header_btn__main text-uppercase" data-toggle="modal" data-target="#ModalCenter">-->
-								<!--Связаться с нами-->
-							<!--</button>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<div class="col-lg-4 col-sm-6 header_aside">-->
-						<!--<form method="post" class="header_form">-->
-							<!--<div class="text-uppercase text-center ml-auto mr-auto mb-3">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>-->
-							<!--<div class="">-->
-								<!--<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>-->
-							<!--</div>-->
-							<!--<div class="">-->
-								<!--<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>-->
-							<!--</div>-->
-							<!--<div class="">-->
-								<!--<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>-->
-							<!--</div>-->
-							<!--<div class="text-center">-->
-								<!--<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Получить скидку</button>-->
-							<!--</div>-->
-						<!--</form>-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</div>-->
 		<div class="header_footer text-center">
 			<div>Хотите узнать как выбрать окна?</div>
-			<button class="btn header_btn header_btn__dark text-uppercase" data-toggle="modal" data-target="#ModalCenterGet">получить консультацию</button>
+			<button class="btn header_btn header_btn__dark text-uppercase _btn1">получить консультацию</button>
 		</div>
 	</header>
 	<main class="main">
@@ -151,10 +115,10 @@
 		<!--Slider-->
 			<div class="works_slider responsive">
 				<div class="works_card">
-					<div class="works_item" data-toggle="modal" data-target="#ModalCenterImg3">
+					<div class="works_item">
 						<img class="works_img" src="img/img_1.jpg" alt="жалюзи">
 					</div>
-					<div class="card-body pt-2 card_text" data-toggle="modal" data-target="#ModalCenterImg3">
+					<div class="card-body pt-2 card_text">
 						<h4><span class="colored">Жалюзи</span></h4>
 						<p class="works_text">Горизонтальные
 							<br>Вертикальные
@@ -163,14 +127,14 @@
 						</p>
 					</div>
 					<div class="card_btn ml-auto mr-auto">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn2">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
-					<div class="works_item" data-toggle="modal" data-target="#ModalCenterImg3">
+					<div class="works_item">
 						<img class="works_img" src="img/img_2.jpg" alt="заборы">
 					</div>
-					<div class="card-body pt-2 card_text" data-toggle="modal" data-target="#ModalCenterImg3">
+					<div class="card-body pt-2 card_text">
 						<h4><span class="colored">заборы</span></h4>
 						<p class="works_text">монтажная глубина 70 мм
 							<br>толщина внешней стенки 2,7 мм
@@ -180,41 +144,47 @@
 						</p>
 					</div>
 					<div class="card_btn">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn2">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
-					<div class="works_item" data-toggle="modal" data-target="#ModalCenterImg3">
-						<img class="works_img" src="img/balkon.jpg" alt="балконы">
-					</div>
-					<div class="card-body pt-2 card_text" data-toggle="modal" data-target="#ModalCenterImg3">
-						<h4><span class="colored">Балконы</span></h4>
-						<p class="works_text"> Разварка
-							<br>Вынос
-							<br>Обшивка
-							<br>Утепление
-							<br>Пристройка
-						</p>
+					<p class="p_hover">Нажми меня</p>
+					<div class="_btn3">
+						<div class="works_item">
+							<img class="works_img" src="img/balkon.jpg" alt="балконы">
+						</div>
+						<div class="card-body pt-2 card_text">
+							<h4><span class="colored">Балконы</span></h4>
+							<p class="works_text"> Разварка
+								<br>Вынос
+								<br>Обшивка
+								<br>Утепление
+								<br>Пристройка
+							</p>
+						</div>
 					</div>
 					<div class="card_btn">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn2">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
-					<div class="works_item" data-toggle="modal" data-target="#ModalCenterImg3">
-						<img class="works_img" src="img/lodji.jpg" alt="лоджии">
-					</div>
-					<div class="card-body pt-2 card_text" data-toggle="modal" data-target="#ModalCenterImg3">
-						<h4><span class="colored">Лоджии</span></h4>
-						<p class="works_text"> Разварка
-							<br>Вынос
-							<br>Обшивка
-							<br>Утепление
-							<br>Пристройка
-						</p>
+					<p class="p_hover">Нажми меня</p>
+					<div class="_btn3">
+						<div class="works_item">
+							<img class="works_img" src="img/lodji.jpg" alt="лоджии">
+						</div>
+						<div class="card-body pt-2 card_text">
+							<h4><span class="colored">Лоджии</span></h4>
+							<p class="works_text"> Разварка
+								<br>Вынос
+								<br>Обшивка
+								<br>Утепление
+								<br>Пристройка
+							</p>
+						</div>
 					</div>
 					<div class="card_btn">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn_2">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
@@ -228,7 +198,7 @@
 						</p>
 					</div>
 					<div class="card_btn">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn2">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
@@ -242,7 +212,7 @@
 						</p>
 					</div>
 					<div class="card_btn">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn2">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
@@ -258,7 +228,7 @@
 						</p>
 					</div>
 					<div class="card_btn">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn2">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
@@ -274,7 +244,7 @@
 						</p>
 					</div>
 					<div class="card_btn">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn2">Заказать</button>
 					</div>
 				</div>
 				<div class="works_card">
@@ -290,7 +260,7 @@
 						</p>
 					</div>
 					<div class="card_btn">
-						<button class="btn works_btn text-uppercase" data-toggle="modal" data-target="#ModalCenter">Заказать</button>
+						<button class="btn works_btn text-uppercase _btn2">Заказать</button>
 					</div>
 				</div>
 			</div>
@@ -298,7 +268,7 @@
 			<div class="row works_footer ml-auto mr-auto animatable fadeInUp">
 				<div>Вызов замерщика <span class="colored"><b>бесплатно</b></span></div>
 				<div class="pl-5">
-					<button class="btn works_btn works_btn__grey text-uppercase" data-toggle="modal" data-target="#ModalCenterCall">Позвонить</button>
+					<button class="btn works_btn works_btn__grey text-uppercase _btn">Позвонить</button>
 				</div>
 			</div>
 		</div>
@@ -308,7 +278,7 @@
 			<h2 class="animatable fadeInUp">Наш <span class="colored">профиль</span></h2>
 			<div class="line ml-auto mr-auto"></div>
 			<div class="profile_wrap ml-auto mr-auto">
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
+					<div class="profile_item _btn4">
 						<div class="card-body"><h3>Эконом</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid ml-auto mr-auto" src="img/wds_classic.jpg" alt="WDS Classic">
@@ -317,7 +287,7 @@
 							<h4><span class="colored">WDS</span> Classic</h4>
 						</div>
 					</div>
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenter500">
+					<div class="profile_item _btn6">
 						<div class="card-body"><h3>Эконом</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid" src="img/wds_500.jpg" alt="WDS 500">
@@ -326,7 +296,7 @@
 							<h4><span class="colored">WDS</span> 500</h4>
 						</div>
 					</div>
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenter400">
+					<div class="profile_item _btn7">
 						<div class="card-body"><h3>Эконом</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid" src="img/wds_400.jpg" alt="WDS 400">
@@ -335,7 +305,7 @@
 							<h4><span class="colored">WDS</span> 400</h4>
 						</div>
 					</div>
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
+					<div class="profile_item">
 						<div class="card-body"><h3>Стандарт</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid" src="img/wds_classic.jpg" alt="WDS Classic">
@@ -344,7 +314,7 @@
 							<h4><span class="colored">WDS</span> 500 (600)</h4>
 						</div>
 					</div>
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
+					<div class="profile_item">
 						<div class="card-body"><h3>Стандарт</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid" src="img/wds_500.jpg" alt="WDS 500">
@@ -353,7 +323,7 @@
 							<h4><span class="colored">WDS</span> 700</h4>
 						</div>
 					</div>
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
+					<div class="profile_item">
 						<div class="card-body"><h3>Стандарт</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid" src="img/wds_400.jpg" alt="WDS 400">
@@ -362,7 +332,7 @@
 							<h4><span class="colored">Steko</span> S 500</h4>
 						</div>
 					</div>
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
+					<div class="profile_item">
 						<div class="card-body"><h3>Премиум</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid" src="img/wds_classic.jpg" alt="WDS Classic">
@@ -371,7 +341,7 @@
 							<h4><span class="colored">WDS</span> 800</h4>
 						</div>
 					</div>
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
+					<div class="profile_item">
 						<div class="card-body"><h3>Премиум</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid" src="img/wds_500.jpg" alt="WDS 500">
@@ -380,7 +350,7 @@
 							<h4><span class="colored">ALUPLAST IDEEAL </span>8000</h4>
 						</div>
 					</div>
-					<div class="profile_item" data-toggle="modal" data-target="#ModalCenterClassic">
+					<div class="profile_item">
 						<div class="card-body"><h3>Премиум</h3></div>
 						<div class="profile_img-wrap">
 							<img class="profile_img img-fluid" src="img/wds_400.jpg" alt="WDS 400">
@@ -392,7 +362,7 @@
 			</div>
 			<div class="profile_footer ml-auto mr-auto animatable fadeInUp">
 				<div class="text-center"><span class="colored">Более 5.000</span><b> довольных клиентов</b></div>
-				<button class="btn profile_btn text-uppercase" data-toggle="modal" data-target="#ModalCenterGet">Получить консультацию</button>
+				<button class="btn profile_btn text-uppercase _btn1">Получить консультацию</button>
 			</div>
 		</div>
 		<!--END SECTION PROFILE-->
@@ -489,10 +459,10 @@
 						</ul>
 					</div>
 					<div class="contacts_form-wrap">
-						<form method="post" class="contacts_form">
+						<form method="post" class="contacts_form" action="func.php">
 							<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
 							<div class="">
-								<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
+								<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="your_name"/>
 							</div>
 							<div class="">
 								<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
@@ -517,87 +487,70 @@
 		<p class="text-center footer_text">© 2007-2018 Pedash H.</p>
 	</footer>
 	<!--POP UP-->
-	<div class="modal fade" id="ModalCenterCall" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="close modal_close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">X</span>
-				</div>
-				<form method="post" class="contacts_form">
-					<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
-					<div class="">
-						<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
-					</div>
-					<div class="">
-						<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
-					</div>
-					<div class="mb-4">
-						<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
-					</div>
-					<div class="text-center">
-						<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Вызвать замерщика</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="ModalCenterGet" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="close modal_close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">X</span>
-				</div>
-				<form method="post" class="contacts_form">
-					<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
-					<div class="">
-						<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
-					</div>
-					<div class="">
-						<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
-					</div>
-					<div class="mb-4">
-						<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
-					</div>
-					<div class="text-center">
-						<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Консультация</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="close modal_close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">X</span>
-				</div>
-				<form method="post" class="contacts_form">
-					<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
-					<div class="">
-						<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
-					</div>
-					<div class="">
-						<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
-					</div>
-					<div class="mb-4">
-						<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
-					</div>
-					<div class="text-center">
-						<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Получить скидку</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-<div class="modal fade" id="ModalCenterImg3" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	<div class="popup_overlay _overlay"></div>
+	<div class="popup_partner _partner">
+		<div class="popup_close _close"></div>
 		<div class="modal_wrap">
-			<div class="close modal_close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">X</span>
-			</div>
+			<form method="post" class="contacts_form">
+				<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
+				<div class="">
+					<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="name"/>
+				</div>
+				<div class="">
+					<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
+				</div>
+				<div class="mb-4">
+					<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
+				</div>
+				<div class="text-center">
+					<button type="submit" name="sign" class="btn header_btn header_btn__main text-uppercase">Вызвать замерщика</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup_partner _partner1">
+		<div class="popup_close _close1"></div>
+		<div class="modal_wrap">
+			<form method="post" class="contacts_form" action="func.php">
+				<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
+				<div class="">
+					<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="your_name"/>
+				</div>
+				<div class="">
+					<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
+				</div>
+				<div class="mb-4">
+					<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
+				</div>
+				<div class="text-center">
+					<button type="submit" name="sign" class="btn header_btn header_btn__main btn_main text-uppercase">Консультация</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup_partner _partner2">
+		<div class="popup_close _close2"></div>
+		<div class="modal_wrap">
+			<form method="post" class="contacts_form" action="func.php">
+				<div class="text-uppercase text-center ml-auto mr-auto mb-5">при заказе на сайте<br><span class="form_size font-weight-bold">Скидка 10%</span></div>
+				<div class="">
+					<input type="text" class="ml-auto mr-auto input form-control" placeholder="Имя" required name="your_name"/>
+				</div>
+				<div class="">
+					<input type="email" class="ml-auto mr-auto input form-control" placeholder="E-mail" name="email" required/>
+				</div>
+				<div class="mb-4">
+					<input type="tel" class="ml-auto mr-auto input form-control" placeholder="Телефон" name="phone" required pattern="[0-9]{6,15}"/>
+				</div>
+				<div class="text-center">
+					<button type="submit" name="sign" class="btn header_btn header_btn__main btn_main text-uppercase">Получить скидку</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup_partner partner _partner3">
+		<div class="popup_close _close3"></div>
+		<div class="modal_wrap _modal">
 			<h4 class="modal_h4"><span class="colored">Наши</span> услуги</h4>
 			<div class="line"></div>
 			<div class="modal_text">&#183;окна &nbsp;&#183;балконы &nbsp;&#183;лоджии</div>
@@ -618,15 +571,11 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class="modal fade" id="ModalCenterClassic" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="popup_overlay__colored _overlay1"></div>
+	<div class="popup_partner popup_partner__color _partner4">
+		<div class="popup_close popup_close__colored _close4"></div>
 		<div class="modal_profile-card">
-			<div class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">X</span>
-			</div>
-			<h4 class="modal_h4"><span class="colored">WDS</span> Classic</h4>
+			<h4 class="modal_h4 modal_h4__colored"><span class="colored">WDS</span> Classic</h4>
 			<div class="line ml-auto mr-auto"></div>
 			<div class="modal_works-item">
 				<img class="img-fluid modal_profile-img" src="img/wds_classic.jpg" alt="WDS Classic">
@@ -646,14 +595,10 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="modal fade" id="ModalCenter500" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="popup_partner popup_partner__color _partner6">
+		<div class="popup_close popup_close__colored _close6"></div>
 		<div class="modal_profile-card">
-			<div class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">X</span>
-			</div>
-			<h4 class="modal_h4"><span class="colored">WDS</span> 500</h4>
+			<h4 class="modal_h4 modal_h4__colored"><span class="colored">WDS</span> 500</h4>
 			<div class="line ml-auto mr-auto"></div>
 			<div class="modal_works-item">
 				<img class="img-fluid modal_profile-img" src="img/wds_500.jpg" alt="WDS Classic">
@@ -671,14 +616,10 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="modal fade" id="ModalCenter400" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="popup_partner popup_partner__color _partner7">
+		<div class="popup_close popup_close__colored _close7"></div>
 		<div class="modal_profile-card">
-			<div class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">X</span>
-			</div>
-			<h4 class="modal_h4"><span class="colored">WDS</span> 400</h4>
+			<h4 class="modal_h4 modal_h4__colored"><span class="colored">WDS</span> 400</h4>
 			<div class="line ml-auto mr-auto"></div>
 			<div class="modal_works-item">
 				<img class="img-fluid modal_profile-img" src="img/wds_400.jpg" alt="WDS Classic">
@@ -696,7 +637,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+
 	<!--END POP UP-->
 <!--CALL BACK-->
 <div class="js-callback callback_none">

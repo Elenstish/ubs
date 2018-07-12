@@ -1,5 +1,6 @@
 //------WORKS
 .works {
+    position: relative;
     &_items {
         margin-top: 4rem;
         margin-bottom: 4rem;
@@ -63,6 +64,31 @@
     }
 }
 
+.works_card {
+    transition: all 1s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+.works_card:hover {
+    background:  @colorBlue;
+    opacity: 0.8;
+}
+.p_hover {
+    display: none;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: @colorBlue;
+    transition: all 1s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+.works_card:hover .p_hover {
+    display: block;
+    position:absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
 .card_btn{
     position: absolute;
     bottom: 0;
@@ -72,44 +98,3 @@
 .card_text {
     padding-left: 5rem;
 }
-.modal_wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1rem auto 5rem auto;
-  width: 100%;
-  pointer-events: auto;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  outline: 0;
-  position: relative;
-}
-
-.modal_item {
-  max-width: 35rem;
-  min-width: 29rem;
-  margin: 1rem;
-  padding: 3rem;
-  position: relative;
-}
-.modal_h4 {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-.modal_text {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 1rem;
-}
-.modal_close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-
-}
-

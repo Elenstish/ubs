@@ -70,7 +70,56 @@ $(document).ready(function() {
 	 	});
 	});
 
-// SLIDER
+//	------POP UP
+    $('._btn').click(function(){
+        $('._partner,._overlay').fadeIn(400);
+    });
+    $('._close,._overlay').click(function(){
+        $('._partner,._overlay').fadeOut(400);
+    });
+
+    $('._btn1').click(function(){
+        $('._partner1,._overlay').fadeIn(400);
+    });
+    $('._close1,._overlay').click(function(){
+        $('._partner1,._overlay').fadeOut(400);
+    });
+
+    $('._btn2').click(function(){
+        $('._partner2,._overlay').fadeIn(400);
+    });
+    $('._close2,._overlay').click(function(){
+        $('._partner2,._overlay').fadeOut(400);
+    });
+
+    $('._btn3').click(function(){
+        $('._partner3,._overlay').fadeIn(400);
+    });
+    $('._close3,._overlay').click(function(){
+        $('._partner3,._overlay').fadeOut(400);
+    });
+
+    $('._btn4').click(function(){
+        $('._partner4,._overlay1').fadeIn(400);
+    });
+    $('._close4,._overlay1').click(function(){
+        $('._partner4,._overlay1').fadeOut(400);
+    });
+
+    $('._btn6').click(function(){
+        $('._partner6,._overlay1').fadeIn(400);
+    });
+    $('._close6,._overlay1').click(function(){
+        $('._partner6,._overlay1').fadeOut(400);
+    })
+
+    $('._btn7').click(function(){
+        $('._partner7,._overlay1').fadeIn(400);
+    });
+    $('._close7,._overlay1').click(function(){
+        $('._partner7,._overlay1').fadeOut(400);
+    })
+// ------------ SLIDER
     $('.responsive').slick({
         infinite: true,
         slidesToShow: 4,
