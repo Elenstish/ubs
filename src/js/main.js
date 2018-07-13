@@ -92,19 +92,19 @@ $(document).ready(function() {
         $('._partner2,._overlay').fadeOut(400);
     });
 
-    $('._btn3').click(function(){
-        $('._partner3,._overlay').fadeIn(400);
-    });
-    $('._close3,._overlay').click(function(){
-        $('._partner3,._overlay').fadeOut(400);
-    });
-
     $('._btn4').click(function(){
         $('._partner4,._overlay1').fadeIn(400);
     });
     $('._close4,._overlay1').click(function(){
         $('._partner4,._overlay1').fadeOut(400);
     });
+
+    $('._btn5').click(function(){
+        $('._partner5,._overlay1').fadeIn(400);
+    });
+    $('._close5,._overlay1').click(function(){
+        $('._partner5,._overlay1').fadeOut(400);
+    })
 
     $('._btn6').click(function(){
         $('._partner6,._overlay1').fadeIn(400);
