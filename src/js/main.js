@@ -226,16 +226,16 @@ $(document).ready(function() {
         // main isotope options
         itemSelector: '.grid-item',
         // set layoutMode
-        layoutMode: 'fitRows',
+        layoutMode: 'masonry',
         // options for cellsByRow layout mode
-        cellsByRow: {
-                    columnWidth: 200,
-                    rowHeight: 200
-                },
-                // options for masonry layout mode
-                masonry: {
-                    columnWidth: '.grid-sizer'
-                }
+        // cellsByRow: {
+        //             columnWidth: 200,
+        //             rowHeight: 200
+        //         },
+        //         // options for masonry layout mode
+        //         masonry: {
+        //             columnWidth: '.grid-sizer'
+        //         }
     })
 
     // var $grid = $('.grid').isotope({
