@@ -226,7 +226,11 @@ $(document).ready(function() {
         // main isotope options
         itemSelector: '.grid-item',
         // set layoutMode
-        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: 435,
+            isFitWidth: true
+                    }
+        // layoutMode: 'masonry',
         // options for cellsByRow layout mode
         // cellsByRow: {
         //             columnWidth: 200,
@@ -290,6 +294,10 @@ $(document).ready(function() {
 //             $( this ).addClass('is-checked');
 //         });
 //     });
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
 
 });
 
