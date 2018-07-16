@@ -42,7 +42,7 @@
 						<a class="nav-link header_link" href="#profile">Профиль</a>
 					</li>
 					<li class="nav-item header_item">
-						<a class="nav-link header_link" href="#advantage">Преимущества</a>
+						<a class="nav-link header_link" href="#advantage">Наши работы</a>
 					</li>
 					<li class="nav-item header_item">
 						<a class="nav-link header_link" href="#plant">Завод</a>
@@ -366,106 +366,81 @@
 		<!--END SECTION PROFILE-->
 		<!--SECTION ADVANTAGES-->
 		<div class="text-center advantages section pt-0" id="advantage">
-			<h2 class="advantages_h2 animatable fadeInUp"><span class="colored">Преимущества</span> работы с нами</h2>
+			<h2 class="advantages_h2 animatable fadeInUp"><span class="colored">Наши</span> работы</h2>
 			<div class="line ml-auto mr-auto"></div>
-			<div class="ad_items">
-				<a class="ad_item active_item" data-filter="*">Все работы</a>
-				<a class="ad_item" data-filter=".print">роллеты</a>
-				<a class="ad_item" data-filter=".branding">окна</a>
-				<a class="ad_item" data-filter=".web">балконы</a>
-				<a class="ad_item" data-filter=".html">кровля </a>
-
-				<!--роллеты   •окна   •балконы   •жалюзы   •мафы-->
-				<!--•кровля    •двери    •модульные дома   •лоджии-->
+			<select class="filters-select">
+				<option value="*">Все</option>
+				<option value=".okno">Окна</option>
+				<option value=".window">Фасады</option>
+				<option value=".balkon">Балконы</option>
+				<option value=".krovlia">Кровля</option>
+			</select>
+			<div class="grid">
+				<div class="grid-item okno"><img class="img-fluid" src="img/1_1.jpg" alt="окно"></div>
+				<div class="grid-item okno"><img class="img-fluid" src="img/okno_1.jpg" alt="окна"></div>
+				<div class="grid-item okno okno_4"><img class="img-fluid" src="img/okno_4.jpg" alt="окна"></div>
+				<div class="grid-item window"><img class="img-fluid" src="img/okno_2.jpg" alt="фасады"></div>
+				<div class="grid-item window"><img class="img-fluid" src="img/okno_3.jpg" alt="фасады"></div>
+				<div class="grid-item balkon img1_2"><img class="img-fluid" src="img/1_2.jpg" alt="балконы"></div>
+				<div class="grid-item balkon img1_2"><img class="img-fluid" src="img/1_3.jpg" alt="балконы"></div>
+				<div class="grid-item balkon okno_4"><img class="img-fluid" src="img/balkon_6.jpg" alt="балконы"></div>
+				<div class="grid-item balkon"><img class="img-fluid" src="img/balkon_2.jpg" alt="балконы"></div>
+				<div class="grid-item balkon"><img class="img-fluid" src="img/balkon_1.jpg" alt="балконы"></div>
+				<div class="grid-item balkon okno"><img class="img-fluid" src="img/balkon_4.jpg" alt="балконы"></div>
+				<div class="grid-item balkon okno"><img class="img-fluid" src="img/balkon_5.jpg" alt="балконы"></div>
+				<div class="grid-item krovlia"><img class="img-fluid" src="img/krovlia_1.jpg" alt="кровля"></div>
 			</div>
-			<div class="portfolio_works">
-				<div class="portfolio_works__item print">
-					<img src="img/1.jpg" alt="work1">
-				</div>
-				<div class="portfolio_works__item branding">
-					<img src="img/2.jpg" alt="work2">
-				</div>
-				<div class="portfolio_works__item web">
-					<img src="img/3.jpg" alt="work3">
-				</div>
-				<div class="portfolio_works__item html">
-					<img src="img/4.jpg" alt="work4">
-				</div>
-				<div class="portfolio_works__item print">
-					<img src="img/5.jpg" alt="work5">
-				</div>
-				<div class="portfolio_works__item branding">
-					<img src="img/6.jpg" alt="work6">
-				</div>
-				<div class="portfolio_works__item web">
-					<img src="img/7.jpg" alt="work7">
-				</div>
-				<div class="portfolio_works__item html">
-					<img src="img/8.jpg" alt="work8">
-				</div>
-				<div class="portfolio_works__item print">
-					<img src="img/9.jpg" alt="work9">
-				</div>
-				<div class="portfolio_works__item branding">
-					<img src="img/10.jpg" alt="work10">
-				</div>
-				<div class="portfolio_works__item web">
-					<img src="img/11.jpg" alt="work11">
-				</div>
-				<div class="portfolio_works__item html">
-					<img src="img/12.jpg" alt="work12">
-				</div>
-			</div>
-			<div class="advantages_wrap ml-auto mr-auto">
-				<div class="advantages_item animatable fadeInUp">
-					<h6>Качество</h6>
-					<p class="advantages_text">
-						Все используемые изделия и материалы сертифицированы и подтверждаются
-						качественными документами., а персонал представляет собой квалифицированных
-						специалистов.
-					</p>
-					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
-				</div>
-				<div class="advantages_item animatable fadeInUp">
-					<h6>Надежность</h6>
-					<p class="advantages_text">
-						Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.
-						Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.
-					</p>
-					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
-				</div>
-				<div class="advantages_item animatable fadeInUp">
-					<h6>Гарантия</h6>
-					<p class="advantages_text">
-						Компания предоставляет гарантию на изделия и свои услуги до 10 лет.
-					</p>
-					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
-				</div>
-				<div class="advantages_item animatable fadeInUp">
-					<h6>Опыт</h6>
-					<p class="advantages_text">
-						Опыт работы с 2007 года, дает нам возможность применять практические навыки в
-						реализации проектов.
-					</p>
-					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
-				</div>
-				<div class="advantages_item animatable fadeInUp">
-					<h6>Долговечность</h6>
-					<p class="advantages_text">
-						Остановив свой выбор на нашей компании, вы приобретаете
-					</p>
-					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
-				</div>
-				<div class="advantages_item animatable fadeInUp">
-					<h6 class="advantages_h6">Энергоэффективность</h6>
-					<p class="advantages_text">
-						Достижение экономически оправданной эффективности использования ТЭР при
-						существующем уровне развития техники и технологии и соблюдении требований к
-						охране окружающей среды.
-					</p>
-					<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
-				</div>
-			</div>
+		</div>
+			<!--<div class="advantages_wrap ml-auto mr-auto">-->
+				<!--<div class="advantages_item animatable fadeInUp">-->
+					<!--<h6>Качество</h6>-->
+					<!--<p class="advantages_text">-->
+						<!--Все используемые изделия и материалы сертифицированы и подтверждаются-->
+						<!--качественными документами., а персонал представляет собой квалифицированных-->
+						<!--специалистов.-->
+					<!--</p>-->
+					<!--<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>-->
+				<!--</div>-->
+				<!--<div class="advantages_item animatable fadeInUp">-->
+					<!--<h6>Надежность</h6>-->
+					<!--<p class="advantages_text">-->
+						<!--Основные составляющие окна — это стеклопакет, профиль, откос, отлив и подоконник.-->
+						<!--Чтобы уменьшить затраты малоизвестных фирм. оконной системы, негативно скажется на энергоэффективности окна.-->
+					<!--</p>-->
+					<!--<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>-->
+				<!--</div>-->
+				<!--<div class="advantages_item animatable fadeInUp">-->
+					<!--<h6>Гарантия</h6>-->
+					<!--<p class="advantages_text">-->
+						<!--Компания предоставляет гарантию на изделия и свои услуги до 10 лет.-->
+					<!--</p>-->
+					<!--<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>-->
+				<!--</div>-->
+				<!--<div class="advantages_item animatable fadeInUp">-->
+					<!--<h6>Опыт</h6>-->
+					<!--<p class="advantages_text">-->
+						<!--Опыт работы с 2007 года, дает нам возможность применять практические навыки в-->
+						<!--реализации проектов.-->
+					<!--</p>-->
+					<!--<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>-->
+				<!--</div>-->
+				<!--<div class="advantages_item animatable fadeInUp">-->
+					<!--<h6>Долговечность</h6>-->
+					<!--<p class="advantages_text">-->
+						<!--Остановив свой выбор на нашей компании, вы приобретаете-->
+					<!--</p>-->
+					<!--<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>-->
+				<!--</div>-->
+				<!--<div class="advantages_item animatable fadeInUp">-->
+					<!--<h6 class="advantages_h6">Энергоэффективность</h6>-->
+					<!--<p class="advantages_text">-->
+						<!--Достижение экономически оправданной эффективности использования ТЭР при-->
+						<!--существующем уровне развития техники и технологии и соблюдении требований к-->
+						<!--охране окружающей среды.-->
+					<!--</p>-->
+					<!--<div class="colored advantages_mark">&#9734;&#9734;&#9734;&#9734;&#9734;</div>-->
+				<!--</div>-->
+			<!--</div>-->
 		</div>
 		<!--END SECTION ADVANTAGES-->
 		<!--SECTION PLANT-->
@@ -705,7 +680,8 @@
 				</p>
 			</div>
 		</div>
-	</div>
+	</div>lp
+
 	<!--END POP UP-->
 <!--CALL BACK-->
 <div class="js-callback callback_none">
@@ -722,8 +698,10 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="libs/bootstrap.min.js"></script>
+	<!--<script type="text/javascript" src="libs/waitforimages.js"></script>-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkZBUGoLbtY_4BJtKsIYC58eSwSZzlc0A&callback=initMap" defer async></script>
 	<script src="js/main.js"></script>
 
