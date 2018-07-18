@@ -219,7 +219,7 @@ $(document).ready(function() {
         itemSelector: '.grid-item',
         // set layoutMode
         masonry: {
-            columnWidth: 435,
+            columnWidth: '.grid-item',
             isFitWidth: true,
             gutter: 20,
             percentPosition: true
