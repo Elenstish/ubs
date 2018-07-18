@@ -214,55 +214,18 @@ $(document).ready(function() {
 
     //***ISOTOPE***
 
-    // $('.grid').isotope({
-    //     // filter: '.okno',
-    //     itemSelector: '.grid-item',
-    //     masonry: {
-    //         columnWidth: 200,
-    //         gutter: 20
-    //     },
-    // });
     var $grid = $('.grid').isotope({
         // main isotope options
         itemSelector: '.grid-item',
         // set layoutMode
         masonry: {
             columnWidth: 435,
-            isFitWidth: true
+            isFitWidth: true,
+            gutter: 20,
+            percentPosition: true
+
                     }
-        // layoutMode: 'masonry',
-        // options for cellsByRow layout mode
-        // cellsByRow: {
-        //             columnWidth: 200,
-        //             rowHeight: 200
-        //         },
-        //         // options for masonry layout mode
-        //         masonry: {
-        //             columnWidth: '.grid-sizer'
-        //         }
     })
-
-    // var $grid = $('.grid').isotope({
-    //     // main isotope options
-    //     itemSelector: '.grid-item',
-    //     // set layoutMode
-    //     layoutMode: 'cellsByRow',
-    //     // options for cellsByRow layout mode
-    //     cellsByRow: {
-    //         columnWidth: 200,
-    //         rowHeight: 150
-    //     },
-    //     // options for masonry layout mode
-    //     masonry: {
-    //         columnWidth: '.grid-sizer'
-    //     }
-    // })
-
-// // init Isotope
-//     var $grid = $('.grid').isotope({
-//         itemSelector: '.grid-item',
-//         layoutMode: 'masonry'
-//     });
 
     var filterFns = {
         // show if number is greater than 50

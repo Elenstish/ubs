@@ -375,7 +375,7 @@
 				<option value=".balkon">Балконы</option>
 				<option value=".krovlia">Кровля</option>
 			</select>
-			<div class="grid">
+			<div class="grid" id="container">
 				<div class="grid-item okno"><a href="img/1_1.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img class="img-fluid" src="img/1_1.jpg" alt="окно"></a></div>
 				<div class="grid-item okno"><a  href="img/okno_1.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img class="img-fluid" src="img/okno_1.jpg" alt="окна"></a></div>
 				<div class="grid-item okno okno_4"><a href="img/okno_4.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img class="img-fluid" src="img/okno_4.jpg" alt="окна"></a></div>
@@ -449,10 +449,12 @@
 			<div class="line ml-auto mr-auto"></div>
 			<div class="plant_wrap ml-auto mr-auto">
 				<div class="embed-responsive embed-responsive-16by9 plant_item">
-					<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/yi05uS374NY" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/yi05uS374NY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<!--<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yi05uS374NY" frameborder="0" allowfullscreen></iframe>-->
 				</div>
 				<div class="m-5"></div><div class="m-5"></div>
 				<div class="embed-responsive embed-responsive-16by9 plant_item">
+					<!--<iframe src="https://www.youtube.com/embed/Tiu50lGS1Bs" frameborder="0" allowfullscreen></iframe>-->
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/Tiu50lGS1Bs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
@@ -698,11 +700,12 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkZBUGoLbtY_4BJtKsIYC58eSwSZzlc0A&callback=initMap" defer async></script>
+	<!--<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>-->
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
     <script type="text/javascript" src="libs/lightbox/ekko-lightbox.min.js"></script>
+	<script type="text/javascript" src="libs/isotope.pkgd.min.js"></script>
 	<script src="libs/bootstrap.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkZBUGoLbtY_4BJtKsIYC58eSwSZzlc0A&callback=initMap" defer async></script>
 	<script src="js/main.js"></script>
 
 </body>
