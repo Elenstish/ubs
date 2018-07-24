@@ -1,0 +1,122 @@
+//------CONTACTS
+.contacts {
+	&_wrap {
+		width: 100%;
+		margin-top: 6rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: stretch;
+		align-items: flex-start;
+		@media only screen and (max-width: @md) {
+			flex-direction: column;
+
+		}
+	}
+	&_item {
+		order: 0;
+		flex: 1 1 50%;
+		align-self: stretch;
+		position: relative;
+	}
+	&_info {
+		display: flex;
+		padding-top: 1rem;
+        width: 100%;
+		@media only screen and (max-width: @md) {
+			justify-content: center;
+			align-items: center;
+		}
+		@media only screen and (max-width: @sm) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		ul {
+			margin-left: 7rem;
+			font-family: @fontPTSans;
+			@media only screen and (max-width: @sm) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			li {
+				margin-bottom: 2rem;
+				@media only screen and (max-width: @xl) {
+					font-size: 2.4rem;
+				}
+				@media only screen and (max-width: @sm) {
+
+				}
+			}
+		}
+
+	}
+	&_form-wrap {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+        @media only screen and (max-width: @md) {
+          position: relative;
+         }
+	}
+	&_form {
+		width: 100%;
+		color: @colorLight;
+		background-color: @colorDark;
+		font-size: 3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 5rem 7rem;
+        @media only screen and (max-width: @xl) {
+          padding: 2rem 3rem;
+        }
+		button {
+			color: @colorLight;
+            padding: 1rem 4rem;
+		}
+		input {
+			margin-bottom: 3rem;
+			font-size: 2.4rem;
+			height: 6rem;
+			border-radius: 1rem;
+		}
+	}
+	&_mail {
+		@media only screen and (max-width: @sm) {
+			font-size: 5rem;
+		}
+	}
+}
+
+.scroll_up {
+	width: 5.5rem;
+	height: 5.5rem;
+	border-radius: 50%;
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	padding: 0;
+	margin: 0;
+	transition: .25s;
+	background: rgba(214, 160, 15, .5) url(../img/top.png) 50% no-repeat;
+	@media only screen and (max-width: @md) {
+		right: 2rem;
+		width: 4.5rem;
+		height: 4.5rem;
+		background-size: 3rem 2.5rem;
+	}
+	@media only screen and (max-width: 480px) {
+		display: none;
+	}
+
+}
+
+#map {
+	min-height: 95rem;
+    @media only screen and (max-width: @xl) {
+      min-height: 80rem;
+    }
+}

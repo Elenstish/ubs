@@ -1,0 +1,75 @@
+//------WORKS
+.works {
+    position: relative;
+    &_items {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        @media (max-width: @xl) {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &_services li {
+        display: inline;
+    }
+    &_text{
+        text-align: left;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    &_colored {
+        color: @colorBlue;
+    }
+    &_btn {
+        background-color: @colorDark;
+        color: @colorLight;
+        font-size: 2.8rem;
+        font-family: @fontCuprum;
+        font-weight: 700;
+        height: 6rem;
+        line-height: 5.2rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        &__grey {
+            background-color: @colorLightDark;
+        }
+    }
+    &_card {
+        height: 60rem !important;
+        position: relative;
+    }
+    &_item {
+        width: 100%;
+        height: 31rem;
+
+    }
+    &_img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 100%;
+    }
+    &_footer{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        text-transform: uppercase;
+        font-size: 4rem;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        @media (max-width: @xl) {
+            margin-top: 7rem;
+            margin-bottom: 7rem;
+        }
+    }
+}
+
+.card_btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.card_text {
+    padding-left: 5rem;
+}

@@ -1,0 +1,137 @@
+ @import "import/_animation";
+@import "import/_variables";
+
+//----MAIN
+
+*, :after, :before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 7px;
+	color: @colorLight;
+	@media (max-width: @sm) {
+		font-size: 6px;
+	}
+	@media (max-width: @md) {
+		font-size: 7px;
+	}
+	@media (max-width: @xl) {
+		font-size: 8px;
+	}
+}
+
+body {
+	font-size: 2.4rem;
+	font-family: @fontRoboto;
+}
+
+h1 {
+	font-size: 15rem;
+	font-weight: 700;
+	font-stretch: condensed;
+	text-transform: uppercase;
+  @media only screen and (max-width: @xl) {
+    font-size: 9.5rem;
+  }
+    @media only screen and (max-width: @md) {
+      font-size: 8rem;
+      text-align: center;
+    }
+    @media only screen and (max-width: @xs) {
+      font-size: 7rem;
+  }
+  @media only screen and (max-width: @lg) {
+    text-align: center;
+  }
+}
+
+h2 {
+    font-size: 7.2rem;
+    font-weight: 700;
+    font-family: @fontPTSans;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: @fontPTSans;
+  text-align: left;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: @fontRoboto;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 4rem;
+    margin-top: 2rem;
+}
+h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: @fontRoboto;
+    text-align: left;
+    line-height: 4.8rem;
+}
+h6 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    font-family: @fontPTSans;
+    text-align: left;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.line {
+    height: 2px;
+    background-color: @colorMain;
+    width: 32rem;
+}
+
+ul {
+	list-style: none;
+	font-size: 3rem;
+}
+
+.colored {
+  color: @colorMain;
+}
+
+.header_menu,
+.header,
+.main,
+.footer {
+  max-width: 100vw;
+  width: 100%;
+  //margin-left: auto;
+  //margin-right: auto;
+}
+.section {
+  width: 100%;
+  padding-top: 4rem;
+  //@media (max-width: @xl) {
+  //  padding-top: 3rem;
+  //}
+}
+
+@import "./import/_pop-up";
+ @import "./import/_lightbox";
+@import "./import/_header";
+@import "./import/_works";
+@import "./import/_profile";
+@import "./import/_advantages";
+@import "./import/_plant";
+@import "./import/_contacts";
+@import "./import/_footer";
+@import "./import/_call";

@@ -1,0 +1,182 @@
+//------HEADER
+.header {
+    margin-top: -22rem;
+	color: @colorLight;
+	background: linear-gradient(rgba(0, 0, 0, 0.51) 100%, rgba(0, 0, 0, 0.51) 100%), url("../img/bg_home.png") 50% 0 no-repeat;
+	background-size: auto;
+	background-attachment: fixed !important;
+    position: relative;
+  @media only screen and (max-width: @lg) {
+    margin-top: -2px;
+  }
+	&_menu {
+		background-color: rgba(69, 70, 71, .85);
+	}
+	&_wrap {
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 29rem;
+      padding-bottom: 7rem;
+      width: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
+      @media only screen and (max-width: @lg) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 90%;
+        justify-content: center;
+      }
+	}
+	&_footer {
+        width: 100%;
+		background-color: @colorMain;
+		color: @colorLightDark;
+		font-size: 6rem;
+		padding-bottom: 4rem;
+        div {
+            @media only screen and (max-width: @md) {
+                line-height: 7rem;
+                font-size: 3.6rem;
+            }
+        }
+      }
+	&_nav {
+		color: @colorLight !important;
+		padding-left: 7%;
+		padding-right: 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media only screen and (max-width: 607px) {
+          flex-direction: column;
+        }
+		ul {
+			color: @linkColor;
+		}
+		@media only screen and (max-width: 1120px) {
+			padding-left: 2%;
+			padding-right: 2%;
+		}
+		@media only screen and (max-width: @md) {
+			ul {
+				display: none;
+			}
+		}
+		@media only screen and (max-width: @xs) {
+			img {
+				width: 90%;
+			}
+		}
+	}
+    &_list {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      @media only screen and (max-width: @lg) {
+        width: 90%;
+      }
+        @media only screen and (max-width: @sm) {
+            flex-direction: column;
+        }
+    }
+	&_item {
+        font-size: 2.4rem;
+	}
+    &_text {
+        line-height: 4.8rem;
+        margin-bottom: 3.5rem;
+        font-size: 3.6rem;
+      @media only screen and (max-width: @xl) {
+        font-size: 3.2rem;
+      }
+        @media only screen and (max-width: @lg) {
+          padding-right: 0;
+          text-align: center;
+        }
+    }
+    &_btn-wrap {
+         @media only screen and (max-width: @lg) {
+           text-align: center;
+           margin-bottom: 1rem;
+         }
+    }
+    &_btn {
+        background-color: @colorMain;
+        font-family: @fontCuprum;
+        font-weight: 700;
+        font-stretch: condensed;
+        font-size: 3rem;
+        padding: 2rem 6.5rem;
+        text-align: center;
+        cursor: pointer;
+        @media only screen and (max-width: @lg) {
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+        }
+        &__main {
+            border-radius: 10px;
+            padding: 1.5rem 4rem;
+        }
+        &__dark {
+            background-color: @colorDark;
+            color: @colorLight;
+            border-radius: 10px;
+            padding: 1.5rem 4rem;
+            @media only screen and (max-width: @xs) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+    &_form {
+        background-color: rgba(0, 0, 0, .8);
+        border-radius: 10px;
+        font-size: 3rem;
+        height: 61rem;
+        width: 45rem;
+        min-width: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        button {
+            color: @colorLight;
+        }
+        input {
+            margin-bottom: 3rem;
+            font-size: 2.4rem;
+            height: 6rem;
+            max-width: 38rem;
+            border-radius: 1rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+    }
+    &_aside {
+        @media only screen and (max-width: @lg) {
+          display: none;
+        }
+    }
+    &_link {
+        color: @colorLight !important;
+        &:hover,
+        &:active {
+            color: @colorMain !important;
+        }
+    }
+}
+
+.form_size {
+	font-size: 4rem;
+}
+.container-fluid {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.navbar-toggler-icon {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
