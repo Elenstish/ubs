@@ -106,6 +106,13 @@ $(document).ready(function() {
         $('._partner4,._overlay1').fadeOut(400);
     });
 
+    $('._btn45').click(function(){
+        $('._partner45,._overlay1').fadeIn(400);
+    });
+    $('._close45,._overlay1').click(function(){
+        $('._partner45,._overlay1').fadeOut(400);
+    });
+
     $('._btn5').click(function(){
         $('._partner5,._overlay1').fadeIn(400);
     });
@@ -120,6 +127,13 @@ $(document).ready(function() {
         $('._partner6,._overlay1').fadeOut(400);
     })
 
+    $('._btn61').click(function(){
+        $('._partner61,._overlay1').fadeIn(400);
+    });
+    $('._close61,._overlay1').click(function(){
+        $('._partner61,._overlay1').fadeOut(400);
+    })
+
     $('._btn7').click(function(){
         $('._partner7,._overlay1').fadeIn(400);
     });
@@ -132,6 +146,13 @@ $(document).ready(function() {
     });
     $('._close8,._overlay1').click(function(){
         $('._partner8,._overlay1').fadeOut(400);
+    })
+
+    $('._btn9').click(function(){
+        $('._partner9,._overlay1').fadeIn(400);
+    });
+    $('._close9,._overlay1').click(function(){
+        $('._partner9,._overlay1').fadeOut(400);
     })
 // ------------ SLIDER
     $('.responsive').slick({
