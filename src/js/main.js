@@ -1,10 +1,11 @@
 // ----------- MAP
+console.time('map');
 var markersData = [
     {
         lat: 47.785054,     // Широта
         lng: 35.212481,    // Долгота
-        name: "УютБудСервис", // Произвольное название, которое будем выводить в информационном окне
-        address:"г. Запорожье, ул. Паромонова, 4"   // Адрес, который также будем выводить в информационном окне
+        name: "УютБудСервис",
+        address: "г. Запорожье, ул. Паромонова, 4"
     }
 ];
 
@@ -27,13 +28,8 @@ function initMap() {
         var name = markersData[i].name;
         var address = markersData[i].address;
         addMarker(latLng, name, address);
-        // Расширяем границы нашей видимой области, добавив координаты нашего текущего маркера
-        // bounds.extend(latLng);
     }
-    // Автоматически масштабируем карту так, чтобы все маркеры были в видимой области карты
-    // map.fitBounds(bounds);
 }
-// google.maps.event.addDomListener(window, "load", initMap);
 function addMarker(latLng, name, address) {
     var marker = new google.maps.Marker({
         position: latLng,
@@ -53,109 +49,13 @@ function addMarker(latLng, name, address) {
         infoWindow.open(map, marker);
     });
 }
+console.timeEnd('map');
+// $(document).ready(function() {
+    $(window).load(function(){
 
-$(document).ready(function() {
-
-// --------- scroll down
-	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
-		e.preventDefault();
-
-		var target = this.hash,
-		$target = $(target);
-
-		$('html, body').stop().animate({
-	    'scrollTop': $target.offset().top
-		}, 900, 'swing', function () {
-	    window.location.hash = target;
-	 	});
-	});
-
-//	------POP UP
-    $('._btn').click(function(){
-        $('._partner,._overlay').fadeIn(400);
-    });
-    $('._close,._overlay').click(function(){
-        $('._partner,._overlay').fadeOut(400);
-    });
-
-    $('._btn1').click(function(){
-        $('._partner1,._overlay').fadeIn(400);
-    });
-    $('._close1,._overlay').click(function(){
-        $('._partner1,._overlay').fadeOut(400);
-    });
-
-    $('._btn2').click(function(){
-        $('._partner2,._overlay').fadeIn(400);
-    });
-    $('._close2,._overlay').click(function(){
-        $('._partner2,._overlay').fadeOut(400);
-    });
-
-    $('._btn3').click(function(){
-        $('._partner3,._overlay1').fadeIn(400);
-    });
-    $('._close3,._overlay1').click(function(){
-        $('._partner3,._overlay1').fadeOut(400);
-    });
-
-    $('._btn4').click(function(){
-        $('._partner4,._overlay1').fadeIn(400);
-    });
-    $('._close4,._overlay1').click(function(){
-        $('._partner4,._overlay1').fadeOut(400);
-    });
-
-    $('._btn45').click(function(){
-        $('._partner45,._overlay1').fadeIn(400);
-    });
-    $('._close45,._overlay1').click(function(){
-        $('._partner45,._overlay1').fadeOut(400);
-    });
-
-    $('._btn5').click(function(){
-        $('._partner5,._overlay1').fadeIn(400);
-    });
-    $('._close5,._overlay1').click(function(){
-        $('._partner5,._overlay1').fadeOut(400);
-    })
-
-    $('._btn6').click(function(){
-        $('._partner6,._overlay1').fadeIn(400);
-    });
-    $('._close6,._overlay1').click(function(){
-        $('._partner6,._overlay1').fadeOut(400);
-    })
-
-    $('._btn61').click(function(){
-        $('._partner61,._overlay1').fadeIn(400);
-    });
-    $('._close61,._overlay1').click(function(){
-        $('._partner61,._overlay1').fadeOut(400);
-    })
-
-    $('._btn7').click(function(){
-        $('._partner7,._overlay1').fadeIn(400);
-    });
-    $('._close7,._overlay1').click(function(){
-        $('._partner7,._overlay1').fadeOut(400);
-    })
-
-    $('._btn8').click(function(){
-        $('._partner8,._overlay1').fadeIn(400);
-    });
-    $('._close8,._overlay1').click(function(){
-        $('._partner8,._overlay1').fadeOut(400);
-    })
-
-    $('._btn9').click(function(){
-        $('._partner9,._overlay1').fadeIn(400);
-    });
-    $('._close9,._overlay1').click(function(){
-        $('._partner9,._overlay1').fadeOut(400);
-    })
-// ------------ SLIDER
-    $('.responsive').slick({
+    // ------------ SLIDER
+    console.time('SLIDER');
+    $('#_responsive').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -193,8 +93,146 @@ $(document).ready(function() {
             }
         ]
     });
+    console.timeEnd('SLIDER');
 
+// --------- scroll down
+    console.time('scroll down');
+	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+		e.preventDefault();
+
+		var target = this.hash,
+		$target = $(target);
+
+		$('html, body').stop().animate({
+	    'scrollTop': $target.offset().top
+		}, 900, 'swing', function () {
+	    window.location.hash = target;
+	 	});
+	});
+    console.timeEnd('scroll down');
+//	------POP UP
+    console.time('POP UP');
+    var partnerOverlay = $('._partner,._overlay');
+    var partner1Overlay = $('._partner1,._overlay');
+    var partner2Overlay = $('._partner2,._overlay');
+    var partner3Overlay1 = $('._partner3,._overlay1');
+    var partner4Overlay1 = $('._partner4,._overlay1');
+    var partner45Overlay1 = $('._partner45,._overlay1');
+    var partner5Overlay1 = $('._partner5,._overlay1');
+    var partner6Overlay1 = $('._partner6,._overlay1');
+    var partner61Overlay1 = $('._partner61,._overlay1');
+    var partner7Overlay1 = $('._partner7,._overlay1');
+    var partner8Overlay1 = $('._partner8,._overlay1');
+    var partner9Overlay1 = $('._partner9,._overlay1');
+    $('._btn').click(function(){
+        partnerOverlay.fadeIn(400);
+        return false;
+    });
+    $('._close,._overlay').click(function(){
+        partnerOverlay.fadeOut(400);
+        return false;
+    });
+
+    $('._btn1').click(function(){
+        partner1Overlay.fadeIn(400);
+        return false;
+    });
+    $('._close1,._overlay').click(function(){
+        partner1Overlay.fadeOut(400);
+        return false;
+    });
+
+    $('._btn2').click(function(){
+        partner2Overlay.fadeIn(400);
+        return false;
+    });
+    $('._close2,._overlay').click(function(){
+        partner2Overlay.fadeOut(400);
+        return false;
+    });
+
+    $('._btn3').click(function(){
+        partner3Overlay1.fadeIn(400);
+        return false;
+    });
+    $('._close3,._overlay1').click(function(){
+        partner3Overlay1.fadeOut(400);
+        return false;
+    });
+
+    $('._btn4').click(function(){
+        partner4Overlay1.fadeIn(400);
+        return false;
+    });
+    $('._close4,._overlay1').click(function(){
+        partner4Overlay1.fadeOut(400);
+        return false;
+    });
+
+    $('._btn45').click(function(){
+        partner45Overlay1.fadeIn(400);
+        return false;
+    });
+    $('._close45,._overlay1').click(function(){
+        partner45Overlay1.fadeOut(400);
+        return false;
+    });
+
+    $('._btn5').click(function(){
+        partner5Overlay1.fadeIn(400);
+        return false;
+    });
+    $('._close5,._overlay1').click(function(){
+        partner5Overlay1.fadeOut(400);
+        return false;
+    });
+
+    $('._btn6').click(function(){
+        partner6Overlay1.fadeIn(400);
+        return false;
+    });
+    $('._close6,._overlay1').click(function(){
+        partner6Overlay1.fadeOut(400);
+        return false;
+    });
+
+    $('._btn61').click(function(){
+        partner61Overlay1.fadeIn(400);
+    });
+    $('._close61,._overlay1').click(function(){
+        partner61Overlay1.fadeOut(400);
+        return false;
+    });
+
+    $('._btn7').click(function(){
+        partner7Overlay1.fadeIn(400);
+        return false;
+    });
+    $('._close7,._overlay1').click(function(){
+        partner7Overlay1.fadeOut(400);
+        return false;
+    });
+
+    $('._btn8').click(function(){
+        partner8Overlay1.fadeIn(400);
+        return false;
+    });
+    $('._close8,._overlay1').click(function(){
+        partner8Overlay1.fadeOut(400);
+        return false;
+    });
+
+    $('._btn9').click(function(){
+        partner9Overlay1.fadeIn(400);
+    });
+    $('._close9,._overlay1').click(function(){
+        partner9Overlay1.fadeOut(400);
+        return false;
+    });
+
+    console.timeEnd('POP UP');
     // --------- scroll up
+    console.time('scroll up');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('#_toTop').fadeIn();
@@ -208,8 +246,9 @@ $(document).ready(function() {
         }, 900);
         return false;
     });
-
+    console.timeEnd('scroll up');
     //CALL
+    console.time('CALL');
     $(window).scroll(function() {
         var height = $(window).scrollTop();
         if(height > 50){
@@ -223,32 +262,33 @@ $(document).ready(function() {
         }
 
     });
-
+    console.timeEnd('CALL');
   // ANIMATION
-	var doAnimations = function() {
-
-		var offset = $(window).scrollTop() + $(window).height(),
-			$animatables = $('.animatable');
-
-		if ($animatables.size() == 0) {
-			$(window).off('scroll', doAnimations);
-		}
-
-		$animatables.each(function(i) {
-			var $animatable = $(this);
-			if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-				$animatable.removeClass('animatable').addClass('animated');
-			}
-		});
-
-	};
-
-	$(window).on('scroll', doAnimations);
-	$(window).trigger('scroll');
-
+  //   console.time('ANIMATION');
+	// var doAnimations = function() {
+  //
+	// 	var offset = $(window).scrollTop() + $(window).height(),
+	// 		$animatables = $('.animatable');
+  //
+	// 	if ($animatables.size() == 0) {
+	// 		$(window).off('scroll', doAnimations);
+	// 	}
+  //
+	// 	$animatables.each(function() {
+	// 		var $animatable = $(this);
+	// 		if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+	// 			$animatable.removeClass('animatable').addClass('animated');
+	// 		}
+	// 	});
+  //
+	// };
+  //
+	// $(window).on('scroll', doAnimations);
+	// $(window).trigger('scroll');
+  //   console.timeEnd('ANIMATION');
 
     //***ISOTOPE***
-
+    console.time('ISOTOPE');
     var $grid = $('.grid').isotope({
         // main isotope options
         itemSelector: '.grid-item',
@@ -296,7 +336,7 @@ $(document).ready(function() {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
-
+    console.timeEnd('ISOTOPE');
 });
 
 // if(window.innerWidth < 800) {
