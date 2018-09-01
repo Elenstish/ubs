@@ -54,7 +54,7 @@ html {
   width: device-width;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
@@ -127,9 +127,9 @@ dd {
   margin-left: 0;
 }
 
-blockquote {
-  margin: 0 0 1rem;
-}
+/*blockquote {*/
+  /*margin: 0 0 1rem;*/
+/*}*/
 
 dfn {
   font-style: italic;
@@ -201,9 +201,9 @@ pre {
   -ms-overflow-style: scrollbar;
 }
 
-figure {
-  margin: 0 0 1rem;
-}
+/*figure {*/
+  /*margin: 0 0 1rem;*/
+/*}*/
 
 img {
   vertical-align: middle;
@@ -218,13 +218,13 @@ table {
   border-collapse: collapse;
 }
 
-caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  color: #6c757d;
-  text-align: left;
-  caption-side: bottom;
-}
+/*caption {*/
+  /*padding-top: 0.75rem;*/
+  /*padding-bottom: 0.75rem;*/
+  /*color: #6c757d;*/
+  /*text-align: left;*/
+  /*caption-side: bottom;*/
+/*}*/
 
 th {
   text-align: inherit;
@@ -462,20 +462,20 @@ mark,
   text-transform: uppercase;
 }
 
-.blockquote {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
+/*.blockquote {*/
+  /*margin-bottom: 1rem;*/
+  /*font-size: 1.25rem;*/
+/*}*/
 
-.blockquote-footer {
-  display: block;
-  font-size: 80%;
-  color: #6c757d;
-}
+/*.blockquote-footer {*/
+  /*display: block;*/
+  /*font-size: 80%;*/
+  /*color: #6c757d;*/
+/*}*/
 
-.blockquote-footer::before {
-  content: "\2014 \00A0";
-}
+/*.blockquote-footer::before {*/
+  /*content: "\2014 \00A0";*/
+/*}*/
 
 .img-fluid {
   max-width: 100%;
@@ -491,19 +491,19 @@ mark,
   height: auto;
 }
 
-.figure {
-  display: inline-block;
-}
+/*.figure {*/
+  /*display: inline-block;*/
+/*}*/
 
-.figure-img {
-  margin-bottom: 0.5rem;
-  line-height: 1;
-}
+/*.figure-img {*/
+  /*margin-bottom: 0.5rem;*/
+  /*line-height: 1;*/
+/*}*/
 
-.figure-caption {
-  font-size: 90%;
-  color: #6c757d;
-}
+/*.figure-caption {*/
+  /*font-size: 90%;*/
+  /*color: #6c757d;*/
+/*}*/
 
 code {
   font-size: 87.5%;
@@ -529,22 +529,22 @@ kbd kbd {
   font-weight: 700;
 }
 
-pre {
-  display: block;
-  font-size: 87.5%;
-  color: #212529;
-}
+/*pre {*/
+  /*display: block;*/
+  /*font-size: 87.5%;*/
+  /*color: #212529;*/
+/*}*/
 
-pre code {
-  font-size: inherit;
-  color: inherit;
-  word-break: normal;
-}
+/*pre code {*/
+  /*font-size: inherit;*/
+  /*color: inherit;*/
+  /*word-break: normal;*/
+/*}*/
 
-.pre-scrollable {
-  max-height: 340px;
-  overflow-y: scroll;
-}
+/*.pre-scrollable {*/
+  /*max-height: 340px;*/
+  /*overflow-y: scroll;*/
+/*}*/
 
 .container {
   width: 100%;
@@ -2905,29 +2905,29 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
-.btn-link {
-  font-weight: 400;
-  color: #007bff;
-  background-color: transparent;
-}
+/*.btn-link {*/
+  /*font-weight: 400;*/
+  /*color: #007bff;*/
+  /*background-color: transparent;*/
+/*}*/
 
-.btn-link:hover {
-  color: #0056b3;
-  text-decoration: underline;
-  background-color: transparent;
-  border-color: transparent;
-}
+/*.btn-link:hover {*/
+  /*color: #0056b3;*/
+  /*text-decoration: underline;*/
+  /*background-color: transparent;*/
+  /*border-color: transparent;*/
+/*}*/
 
-.btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
-  border-color: transparent;
-  box-shadow: none;
-}
+/*.btn-link:focus, .btn-link.focus {*/
+  /*text-decoration: underline;*/
+  /*border-color: transparent;*/
+  /*box-shadow: none;*/
+/*}*/
 
-.btn-link:disabled, .btn-link.disabled {
-  color: #6c757d;
-  pointer-events: none;
-}
+/*.btn-link:disabled, .btn-link.disabled {*/
+  /*color: #6c757d;*/
+  /*pointer-events: none;*/
+/*}*/
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
@@ -8916,11 +8916,11 @@ a.text-dark:hover, a.text-dark:focus {
   pre {
     white-space: pre-wrap !important;
   }
-  pre,
-  blockquote {
-    border: 1px solid #adb5bd;
-    page-break-inside: avoid;
-  }
+  /*pre,*/
+  /*blockquote {*/
+    /*border: 1px solid #adb5bd;*/
+    /*page-break-inside: avoid;*/
+  /*}*/
   thead {
     display: table-header-group;
   }

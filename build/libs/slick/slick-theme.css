@@ -12,8 +12,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    /*src: url('./fonts/slick.eot');*/
+    /*src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');*/
 }
 /* Arrows */
 .slick-prev,
@@ -36,7 +36,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: rgba(255,255,255,.01);
     border: none;
     outline: none;
 }
@@ -63,7 +63,7 @@
 @media only screen and (max-width: 380px) {
     .slick-prev {
         left: 0;
-        background: transparent;
+        background: rgba(255,255,255,.01);
     }
 }
 [dir='rtl'] .slick-prev
@@ -89,7 +89,7 @@
 @media only screen and (max-width: 380px) {
     .slick-next {
         right: 0;
-        background: transparent;
+        background: rgba(255,255,255,.01);
     }
 }
 [dir='rtl'] .slick-next
@@ -153,10 +153,10 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: rgba(255,255,255,.01);
     border: 0;
     outline: none;
-    background: transparent;
+    background: rgba(255,255,255,.01);
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
